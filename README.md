@@ -29,33 +29,33 @@ We will develop an interactive website for the homeless and organizations (e.g. 
   - Washington D.C. Data Portal
   
   
-  #### Functionality of Transit2Home
-  - Exhibit the correlations between environmental resources and socioeconomic resources
-  - Exhibit locations where the homeless gather and loiter
-  - Mapping these locations suitable for the construction of temporary shelters
-  - Suggesting locations that are both suitable and lawful to build temporary locations
+#### Functionality of Transit2Home
+- Exhibit the correlations between environmental resources and socioeconomic resources
+- Exhibit locations where the homeless gather and loiter
+- Mapping these locations suitable for the construction of temporary shelters
+- Suggesting locations that are both suitable and lawful to build temporary locations
   
   
-  #### Visualization of Transit2Home
+#### Visualization of Transit2Home
   We are going to develop an interactive website on which we intend to include (and potentially not limit to) the following:
-  - Neighborhoods and/or communities (boundaries); Demographical characteristics
-  - Open space: green space, parks, public recreational areas, rivers
-  - Economic development status: income level, GDP per capita
-  - Pins of the current available homeless shelters
-  - Pins of potential locations for the homeless
+- Neighborhoods and/or communities (boundaries); Demographical characteristics
+- Open space: green space, parks, public recreational areas, rivers
+- Economic development status: income level, GDP per capita
+- Pins of the current available homeless shelters
+- Pins of potential locations for the homeless
   
   
-  #### Potential Client
-  - Government
-  - Organizations with missions related to helping the homeless or building temporary shelters
-  - Researchers
-  - Other concerned parties
+#### Potential Client
+- Government
+- Organizations with missions related to helping the homeless or building temporary shelters
+- Researchers
+- Other concerned parties
   
   
-  #### Reference
+#### Reference
   
   
-  #### Timeline
+#### Timeline
   
   
   | Task                           | Sub-task                   | Responsible Team Member | Deadline |
