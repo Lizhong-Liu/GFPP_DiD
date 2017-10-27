@@ -56,25 +56,6 @@ We will develop an interactive website for the homeless and organizations (e.g. 
   
   
   #### Timeline
-  <table>
-    <thead>
-      <tr><td><b>Task</b></td><td><b>Sub-task</b></td><td><b>Responsible Team Member</b></td><td><b>Deadline</b></td>
-    <thead>
-    <tbody>
-      <tr><td rowspan="3">1. Proposal Draft</td><td>README and submission</td><td>Lizhong</td><td>Oct 31</td>
-      <tr><td>Formatting</td><td>Manyi</td><td>Oct 31</td>
-      <tr><td>Statsmodel</td><td>Yiran</td><td>Oct 31</td>
-      <tr><td rowspan="2">2. Background Research</td><td>Data sources</td><td>All</td><td>Nov 7</td>
-      <tr><td>Literature Review</td><td>All</td><td>Nov 7</td>
-      <tr><td bgcolor="#FFFFFF" rowspan="2">3. Data Processing</td><td>Data Cleaning and Analysis</td><td>All</td><td>Nov 14</td>
-      <tr><td>Data Visualization</td><td>All</td><td>Nov 14</td>
-      <tr><td>4. Report Writing/Presentation</td><td></td><td>All</td><td>Dec 1</td>
-      <tr><td>5. Website Construction</td><td></td><td>All</td><td>Dec 4</td>
-    <tbody>
-  <table>
-  
-  
-  **Alternative**
   
   
   | Task                           | Sub-task                   | Responsible Team Member | Deadline |
