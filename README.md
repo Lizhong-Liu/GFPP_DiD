@@ -8,26 +8,15 @@ We will develop an interactive website for the homeless and organizations (e.g. 
 
 
 #### Policy Interest: Urban Planning, Social Work and Public Administration
-- We will 
-- Provide references for the government and nonprofits to help the homeless;
-- Inform the public of locations where the homeless gather and loiter (might also be the places potentially more dangerous i.e. higher crime rates etc.)
-- Better utilize public resources -- why don’t the homeless stay at the permanent shelters built by the government?
+- Provide references for the government and nonprofits to help the homeless
+- Inform the public of locations where the homeless gather and loiter
+- Better utilize public resources
+- To be continued...
 
-
-#### Data Source
-- Chicago Data Portal
-  - Neighborhoods / Chicago Community Areas
-  - Demographical Data: a) Ethinics; b) Population density
-  - Socio-Economic Data: a) Income/GDP per capita; b) Level of education; c) [Crime rates](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2)
-  - Open Space Data: a) [Gardens](https://data.cityofchicago.org/Environment-Sustainable-Development/Open-Spaces-Neighbor-Space-Gardens-KML/mxm5-4jmw); b) [River Walk](https://data.cityofchicago.org/Environment-Sustainable-Development/Open-Spaces-Riverwalk-KML/22bv-uv6r)
-
-- Current Homeless Shelter Locations
-  - Proximity to homeless care offering organization
-
-- Other Target Cities (To include after the pilot succeed.)
-  - [Los Angeles Data Portal](https://www.lacity.org/search/google/GIS)
-  - New York City Data Portal
-  - Washington D.C. Data Portal
+  **We will present the potential benefits of the project by studying correlations between the following pairs of variables**
+  - crime rates vs. density of the homeless
+  - environmental factors vs. income level
+  - ...
   
   
 #### Data Source
@@ -53,9 +42,9 @@ Ideal shelter sites should provide a habitable and convenient living environment
     - ...
 
 We will use the coordinates from these three sources to map out areas that:
-1) are located in green open space;
-2) are within certain range from the nearest hospital;
-3) have low level of criminal activities.
+- are located in green open space;
+- are within certain range from the nearest hospital;
+- have low level of criminal activities.
 These areas will be the candidates for our shelter site locations.
   
   
@@ -83,7 +72,8 @@ These areas will be the candidates for our shelter site locations.
   
   
 #### Reference
-  
+- [Current Shelters in Chicago](https://www.cityofchicago.org/city/en/depts/fss/provdrs/emerg/svcs/shelter_system.html)
+- [Homeless Outreach in Chicago](https://www.cityofchicago.org/city/en/depts/fss/supp_info/homeless_outreachandengagement.html)
   
 #### Timeline
   
