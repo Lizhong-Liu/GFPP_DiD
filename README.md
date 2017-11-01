@@ -41,11 +41,11 @@ Ideal shelter sites should provide a habitable and convenient living environment
     - Population density is within a reasonable range;
     - ...
 
-We will use the coordinates from these three sources to map out areas that:
-- are located in green open space;
-- are within certain range from the nearest hospital;
-- have low level of criminal activities.
-These areas will be the candidates for our shelter site locations.
+ We will use the coordinates from these three sources to map out areas that:
+ - are located in green open space;
+ - are within certain range from the nearest hospital;
+ - have low level of criminal activities.
+ These areas will be the candidates for our shelter site locations.
   
   
 #### Functionality of Transit2Home
