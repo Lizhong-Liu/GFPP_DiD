@@ -26,9 +26,9 @@ The following list exhibits potential deliverables of our project:
 #### Variables and Data Source
 Our model tries to test the potential impacts of GFPP on mutiple socio-economic indicators: health, human capital (education), and household economic development. Within these three categories, we further specify the variables as following:
 - Health:
-  - 
+  - Children
 - Human Capital:
-  -
+  - Graduation Rate
 - Household Economic Development:
   - Income level
   
