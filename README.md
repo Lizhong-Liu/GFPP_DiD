@@ -30,7 +30,8 @@ Our model tries to test the potential impacts of GFPP on mutiple socio-economic 
 - Human Capital:
   - Graduation Rate
 - Household Economic Development:
-  - Income level
+  - [Income level](http://www.city-data.com/income/income-Los-Angeles-California.html)(by zipcode);
+- Other Socio-Economic indicators:
   
   
 #### Reference
