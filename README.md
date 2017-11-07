@@ -26,12 +26,14 @@ The following list exhibits potential deliverables of our project:
 #### Variables and Data Source
 Our model tries to test the potential impacts of GFPP on mutiple socio-economic indicators: health, human capital (education), and household economic development. Within these three categories, we further specify the variables as following:
 - Health:
-  - Children
+  - [Children Food Security Data](http://www.publichealth.lacounty.gov/ha/HA_DATA_TRENDS.htm#Child);
 - Human Capital:
-  - Graduation Rate
+  - [Enrollment Rate & Education Attainment](https://www.census.gov/data/developers/data-sets/acs-5year.html);
+  - [Unemplotment Rate](https://www.census.gov/data/developers/data-sets/acs-5year.html);
 - Household Economic Development:
-  - [Income level](http://www.city-data.com/income/income-Los-Angeles-California.html)(by zipcode);
+  - [Income level](https://www.census.gov/data/developers/data-sets/acs-5year.html);
 - Other Socio-Economic indicators:
+  As GFPP also intends to support the development of local business, we also want to test its effects on helping local business thrive. We propose to use [Active Businesses data](https://data.lacity.org/A-Prosperous-City/Listing-of-Active-Businesses/6rrh-rzua) and focus on the increments of businesses (especially those in food industry) before and after GFPP's adoptation.
   
   
 #### Reference
