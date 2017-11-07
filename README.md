@@ -1,79 +1,40 @@
-# Transit2Home
+# Good Food Purchasing Program in LA: Socio-economic Impacts and Implications
 ## PPHA 30550/1 - Final Project
 **Group Member: [Manyi Wang](@manyiw), [Yiran Hao](@chiertu), [Lizhong Liu](@Lizhong-Liu)**
 
 
-#### Project Overview
-We will develop an interactive website for the homeless and organizations (e.g. [Cardborigami](http://www.cardborigami.org)) building temporary shelters for the homeless by mapping current shelters and potential locations for new shelters. We will use open data of Chicago and pilot in Chicago. Once the feasibility proves out, we will promote the projects to major cities including New York City, Washington DC, Los Angeles, and San Francisco etc. 
+#### GFPP Overview
+Good Food Purchasing Program (GFPP) is an initiative currently implemented only in California, which is mainly adopted by public institutions (public schools, municipalities, etc.). The bodies practicing such program restrict their purchase of meals by standards of nutrition, of raw material sources, and of envrionmental influences. GFPP has five value criteria: animal welfare, nutrition, support for lobal business, rights of employees (such as safety and justice), and environmental sustainability. 
+
+A more insightful overview of GFPP can be found on the website of [Center for Good Food Purchasing](https://goodfoodpurchasing.org/program-overview/). You can also find details of LA's GFPP practice [here](http://goodfoodla.org/good-food/) and [here](https://achieve.lausd.net/Page/11672).
 
 
-#### Policy Interest: Urban Planning, Social Work and Public Administration
-- Provide references for the government and nonprofits to help the homeless
-- Inform the public of locations where the homeless gather and loiter
-- Better utilize public resources
-- To be continued...
+#### Project Goals
+Our project aims to identify the causal relations between the implementation of this program and local socio-economic development by applying a Regression Discontinuity Design (RDD). Since Los Angeles is the very first city piloting the program, we mark LA as our "city of interest". Given that LA adopted the policy from 2012, our timeframe and sample size are limited, we will also include San Francisco -- the second city adopting the policy -- into our sample.
 
-  **We will present the potential benefits of the project by studying correlations between the following pairs of variables**
-  - crime rates vs. density of the homeless
-  - environmental factors vs. income level
-  - ...
-  
-  
-#### Data Source
-Ideal shelter sites should provide a habitable and convenient living environment for the homeless and at the same time cause little disturbance to surrounding neighborhood. To achieve this goal, we selected three site selection criteria that we think best reflect the needs of both sides. The three criteria, with their respetive data source in hyperlink, are listed below into two categories, geographical and socioeconomic. We also list some tentative criteria that we think are relevant but could not make it to our criteria due to lack of data.
+The City of Chicago has just adopted GFPP in this Octorber. Therefore, we will also try to further utilize our regression results to induce the implications of adopting GFPP to the socio-economic development of Chicago.
 
-- Our geographical criteria are:
-  - Land should be open and level and ideally have shield against sunlight or rain (we are mainly aiming at public parks and airport):
-    - Data Source: ["Chicago Park District Facilities"](https://data.cityofchicago.org/Parks-Recreation/Parks-Chicago-Park-District-Facilities-current-/5yyk-qt9y) has the coordinates of Chicago park areas;
-  - Tentative criteria:   
-    - Elevation should be above level reachable by flooding rain or melting snow;
-    - Noise level should be less than (a certain level);
-    - Wind speed should be within a reasonable range;
-    - ...
 
-- Our socioeconomic criteria are:
-  - Criminal activities should be at a low level:
-    - Data Source: ["Crimes - 2001 to present"](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2/data) has the coordinates of Chicago crime activities;
-  - Proximity to hospitals and medical helps:
-    - Data Source: ["Hospitals - Chicago"](https://data.cityofchicago.org/Health-Human-Services/Hospitals-Chicago/ucpz-2r55) has the coordinates of Chicago hospitals;
-  - Tentative criteria:
-    - Historical or touristic sites should be avoided;
-    - Population density is within a reasonable range;
-    - ...
+#### Deliverables
+The following list exhibits potential deliverables of our project:
+- Descriptive analysis of the socio-economic development level of Los Angeles;
+- RDD results (presented in tables), including baseline regression results and discontinuity regression results;
+- Data visualization of the baseline regressions and RDD;
+- Mapping of the school district adopting GFPP throughout LA, together with the income level (suggesting with different shades).
 
- We will use the coordinates from these three sources to map out areas that:
- - are located in green open space;
- - are within certain range from the nearest hospital;
- - have low level of criminal activities.
- These areas will be the candidates for our shelter site locations.
-  
-  
-#### Functionality of Transit2Home
-- Exhibit the correlations between environmental resources and socioeconomic resources
-- Exhibit locations where the homeless gather and loiter
-- Mapping these locations suitable for the construction of temporary shelters
-- Suggesting locations that are both suitable and lawful to build temporary locations
-  
-  
-#### Visualization of Transit2Home
-  We are going to develop an interactive website on which we intend to include (and potentially not limit to) the following:
-- Neighborhoods and/or communities (boundaries); Demographical characteristics
-- Open space: green space, parks, public recreational areas, rivers
-- Economic development status: income level, GDP per capita
-- Pins of the current available homeless shelters
-- Pins of potential locations for the homeless
-  
-  
-#### Potential Client
-- Government
-- Organizations with missions related to helping the homeless or building temporary shelters
-- Researchers
-- Other concerned parties
+
+#### Variables and Data Source
+Our model tries to test the potential impacts of GFPP on mutiple socio-economic indicators: health, human capital (education), and household economic development. Within these three categories, we further specify the variables as following:
+- Health:
+ - 
+- Human Capital:
+ -
+- Household Economic Development:
+ - Income level
   
   
 #### Reference
-- [Current Shelters in Chicago](https://www.cityofchicago.org/city/en/depts/fss/provdrs/emerg/svcs/shelter_system.html)
-- [Homeless Outreach in Chicago](https://www.cityofchicago.org/city/en/depts/fss/supp_info/homeless_outreachandengagement.html)
+
   
 #### Timeline
   
@@ -88,4 +49,3 @@ Ideal shelter sites should provide a habitable and convenient living environment
   | 3. Data Processing             | Data Cleaning and Analysis | All                     | Nov 14   |
   |                                | Data Visualization         | All                     | Nov 21   |
   | 4. Report Writing/Presentation |                            | All                     | Dec 1    |
-  | 5. Website Construction        |                            | All                     | Dec 4    |
