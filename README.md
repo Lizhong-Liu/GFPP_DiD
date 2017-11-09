@@ -10,7 +10,7 @@ A more insightful overview of GFPP can be found on the website of [Center for Go
 
 
 #### Project Goals
-Our project aims to identify the causal relations between the implementation of this program and local socio-economic development by applying a Regression Discontinuity Design (RDD). Since Los Angeles is the very first city piloting the program, we mark LA as our "city of interest". Given that LA adopted the policy from 2012, our timeframe and sample size are limited, we will also include San Francisco -- the second city adopting the policy -- into our sample.
+Our project aims to identify the causal relations between the implementation of this program and local socio-economic development by applying a Difference-in-difference analysis. Since Los Angeles is the very first city piloting the program, we mark LA as our "city of interest". Given that LA adopted the policy from 2012, our timeframe and sample size are limited, we will also include San Francisco -- the second city adopting the policy -- into our sample.
 
 The City of Chicago has just adopted GFPP in this Octorber. Therefore, we will also try to further utilize our regression results to induce the implications of adopting GFPP to the socio-economic development of Chicago.
 
@@ -18,8 +18,8 @@ The City of Chicago has just adopted GFPP in this Octorber. Therefore, we will a
 #### Deliverables
 The following list exhibits potential deliverables of our project:
 - Descriptive analysis of the socio-economic development level of Los Angeles;
-- RDD results (presented in tables), including baseline regression results and discontinuity regression results;
-- Data visualization of the baseline regressions and RDD;
+- Difference-in-Difference results (presented in tables), including baseline regression results and discontinuity regression results;
+- Data visualization of the baseline regressions and the DiD results;
 - Mapping of the school district adopting GFPP throughout LA, together with the income level (suggesting with different shades).
 
 
