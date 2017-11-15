@@ -4,7 +4,7 @@
 
 
 #### GFPP Overview
-Good Food Purchasing Program (GFPP) is an initiative currently implemented in several municipalities such as Los Angeles, San Francisco, and New York, which is mainly adopted by public institutions (public schools, municipalities, etc.). The bodies practicing such program restrict their purchase of meals by standards of nutrition, of raw material sources, and of envrionmental influences. GFPP has five value criteria: animal welfare, nutrition, support for lobal business, rights of employees (such as safety and justice), and environmental sustainability. 
+Good Food Purchasing Program (GFPP) is an initiative currently implemented in several municipalities such as Los Angeles, San Francisco, and New York, which is mainly adopted by public institutions (public schools, municipalities, etc.). The bodies practicing such program restrict their purchase of meals by standards of nutrition, of raw material sources, and of envrionmental influences. GFPP has five value criteria: animal welfare, nutrition, support for local business, rights of employees (such as safety and justice), and environmental sustainability. 
 
 A more insightful overview of GFPP can be found on the website of [Center for Good Food Purchasing](https://goodfoodpurchasing.org/program-overview/). You can also find details of LA's GFPP practice [here](http://goodfoodla.org/good-food/) and [here](https://achieve.lausd.net/Page/11672).
 
