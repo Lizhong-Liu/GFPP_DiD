@@ -33,13 +33,15 @@ Our model tries to test the potential impacts of GFPP on mutiple socio-economic 
   - [Unemplotment Rate](https://www.census.gov/data/developers/data-sets/acs-5year.html);
 - Household Economic Development:
   - [Income level](https://www.census.gov/data/developers/data-sets/acs-5year.html);
+  - [Employment & Industry](https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t)
 - Other Socio-Economic indicators:
-  As GFPP also intends to support the development of local business, we also want to test its effects on helping local business thrive. We propose to use [Active Businesses data](https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t) and focus on the increments of businesses (especially those in food industry) before and after GFPP's adoptation.
+  As GFPP also intends to support the development of local business, we also want to test its effects on helping local business thrive. We propose to use [Active Businesses data](https://data.lacity.org/A-Prosperous-City/Listing-of-Active-Businesses/6rrh-rzua) and focus on the increments of businesses (especially those in food industry) before and after GFPP's adoptation.
   
   
 #### Reference
 - [Tracking the Ripple Effects of LA’s Good Food Purchasing Program](http://www.policylink.org/equity-in-action/la-good-food-purchasing-program)
 - [Healthy Food Procurement Policies and Their Impact](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3986994/)
+- [Dietary effects of the National School Lunch Program and the School Breakfast Program](http://ajcn.nutrition.org/content/61/1/221S.full.pdf+html)
   
 #### Timeline
   
