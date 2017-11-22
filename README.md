@@ -42,6 +42,7 @@ Our model tries to test the potential impacts of GFPP on mutiple socio-economic 
 - [Tracking the Ripple Effects of LA’s Good Food Purchasing Program](http://www.policylink.org/equity-in-action/la-good-food-purchasing-program)
 - [Healthy Food Procurement Policies and Their Impact](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3986994/)
 - [Dietary effects of the National School Lunch Program and the School Breakfast Program](http://ajcn.nutrition.org/content/61/1/221S.full.pdf+html)
+- [Evaluating the Impact of Conditional Cash Transfer Programs](https://academic.oup.com/wbro/article-abstract/20/1/29/1667806)
   
 #### Timeline
   
