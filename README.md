@@ -28,12 +28,13 @@ Our model tries to test the potential impacts of GFPP on mutiple socio-economic 
 - Health:
   - [Children Food Security Data](http://www.publichealth.lacounty.gov/ha/HA_DATA_TRENDS.htm#Child);
 - Human Capital:
-  - [Enrollment Rate & Education Attainment](https://www.census.gov/data/developers/data-sets/acs-5year.html);
+  - [Enrollment Rate](https://www.cde.ca.gov/ds/sd/sd/filesenr.asp);
+  - [School Attendance](https://www.cde.ca.gov/ds/fd/ec/currentexpense.asp);
   - [Unemplotment Rate](https://www.census.gov/data/developers/data-sets/acs-5year.html);
 - Household Economic Development:
   - [Income level](https://www.census.gov/data/developers/data-sets/acs-5year.html);
 - Other Socio-Economic indicators:
-  As GFPP also intends to support the development of local business, we also want to test its effects on helping local business thrive. We propose to use [Active Businesses data](https://data.lacity.org/A-Prosperous-City/Listing-of-Active-Businesses/6rrh-rzua) and focus on the increments of businesses (especially those in food industry) before and after GFPP's adoptation.
+  As GFPP also intends to support the development of local business, we also want to test its effects on helping local business thrive. We propose to use [Active Businesses data](https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t) and focus on the increments of businesses (especially those in food industry) before and after GFPP's adoptation.
   
   
 #### Reference
