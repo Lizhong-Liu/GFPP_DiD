@@ -19,7 +19,7 @@ for i in downloads:
 for i in downloads[1:-7]:
     resp = requests.get(i)
     file_name = "{}".format(i.split("/")[-1])
-    with open(file_name, "wb") as out:
+    with open("health/{}".format(file_name), "wb") as out:
         out.write(resp.content)
 
 # School enrollment
