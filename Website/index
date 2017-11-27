@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <title>IPPP2017 Final Project</title>
+</head>
+  
+<body>
+<ul class="nav">
+  <li><a href="#Program Introduction" class="active">Program Introduction</a></li>
+  <li><a href="#Background Information">Background Information</a></li>
+  <li><a href="#Variables">Variables</a></li>
+  <li><a href="#Regression Results">Regression Results</a></li>
+</ul>
 
+<h1>Good Food Purchasing Policy in Los Angeles: Inferences on Impacts</h1>
+  
+<section id="Program Introduction">
+  <h2>Program Introduction</h2>
+  <p>The Good Food Purchasing Program is designed to do for the food system what LEED certification did for energy efficiency in buildings. Good Food Purchasing Program (GFPP) is an initiative currently implemented in several municipalities such as Los Angeles, San Francisco, and New York, which is mainly adopted by public institutions (public schools, municipalities, etc.). The bodies practicing such program restrict their purchase of meals by standards of nutrition, of raw material sources, and of envrionmental influences. The Program provides a metric based, flexible framework that encourages large institutions to direct their buying power toward five core values: local economies, environmental sustainability, valued workforce, animal welfare and nutrition. The Good Food Purchasing Program is the first procurement model to support these food system values in equal measure. The Program provides a metric based, flexible framework that encourages large institutions to direct their buying power toward five core values: local economies, environmental sustainability, valued workforce, animal welfare and nutrition. The Good Food Purchasing Program is the first procurement model to support these food system values in equal measure.</p>
+  <p>For more information, please click 
+  <a href="https://goodfoodpurchasing.org">here</a>
+  </p>
+</section>
+
+<section id="Background Information">
+  <h2>Background Information</h2>
+  
+</section>
+  
+<section id="Variables">
+  <h2>Variables</h2>
+</section> 
+
+<section id="Regression Results">
+  <h2>Regression Results</h2>
+</section> 
+  
+</body>
+</html>
