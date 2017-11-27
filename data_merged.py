@@ -5,9 +5,10 @@ df = pd.read_csv("school_enrollment.csv", sep="\t", converters={"CDS_CODE": str}
 df = df[df.index.get_level_values("CDS_CODE") // 10e11 == 19]
 
 pft = pd.read_csv("PFT.csv", converters={"CDS_CODE": str})
-pft.rename(columns={"CDS": "CDS_CODE", "AC_total": "AC_TOTAL", "AS_total": "AS_TOTAL", "BC_total": "BC_TOTAL",
-                    "F_total": "F_TOTAL", "TXS_total": "TXS_TOTAL", "UBS_total": "UBS_TOTAL", "Health_total": "HEALTH_TOTAL"}, inplace=True)
-pft = pft.loc[:, ["CDS_CODE", "YEAR", "AC_TOTAL", "AS_TOTAL", "BC_TOTAL", "F_TOTAL", "TXS_TOTAL", "UBS_TOTAL", "HEALTH_TOTAL"]]
+pft.rename(columns={"CDS": "CDS_CODE"}, inplace=True)
+pft = pft.loc[:, ['CDS_CODE', 'YEAR', 'AC_5', 'AC_7', 'AC_9', 'AS_5', 'AS_7', 'AS_9','BC_5', 'BC_7',
+                  'BC_9', 'F_5', 'F_7', 'F_9', 'TXS_5', 'TXS_7',
+                  'TXS_9', 'UBS_5', 'UBS_7', 'Health_5', 'Health_7', 'Health_9']]
 pft.set_index(["CDS_CODE", "YEAR"], inplace=True)
 
 la_gfpp = pd.merge(df.reset_index(), pft.reset_index(),
