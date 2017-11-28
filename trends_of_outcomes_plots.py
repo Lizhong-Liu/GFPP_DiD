@@ -3,8 +3,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
-from data_regression import df1, controls, dependents
+from data_regression import df1, dependents
 
+df1.reset_index(inplace=True)
 # Plot the trend for treatment and control group. (line)
 for x in dependents:
     table = df1.pivot_table(values='{}'.format(x), index=['YEAR'], columns=['D'], aggfunc=np.mean)
