@@ -1,0 +1,25 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              FRPM_RATE   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                 -0.000
+Method:                 Least Squares   F-statistic:                    0.3940
+Date:                Tue, 28 Nov 2017   Prob (F-statistic):              0.530
+Time:                        12:05:27   Log-Likelihood:                -431.41
+No. Observations:                2762   AIC:                             866.8
+Df Residuals:                    2760   BIC:                             878.7
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      0.6481      0.013     48.368      0.000       0.622       0.674
+D             -0.0092      0.015     -0.628      0.530      -0.038       0.020
+==============================================================================
+Omnibus:                      377.202   Durbin-Watson:                   0.522
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              321.164
+Skew:                          -0.751   Prob(JB):                     1.82e-70
+Kurtosis:                       2.267   Cond. No.                         4.79
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

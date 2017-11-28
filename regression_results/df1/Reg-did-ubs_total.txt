@@ -1,0 +1,30 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              UBS_TOTAL   R-squared:                       0.190
+Model:                            OLS   Adj. R-squared:                  0.189
+Method:                 Least Squares   F-statistic:                     268.8
+Date:                Tue, 28 Nov 2017   Prob (F-statistic):          4.16e-310
+Time:                        12:00:55   Log-Likelihood:                 2840.9
+No. Observations:                6905   AIC:                            -5668.
+Df Residuals:                    6898   BIC:                            -5620.
+Df Model:                           6                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept        0.7218      0.031     22.997      0.000       0.660       0.783
+I               -0.0177      0.010     -1.807      0.071      -0.037       0.002
+D               -0.0415      0.008     -5.004      0.000      -0.058      -0.025
+D:I             -0.0021      0.011     -0.192      0.848      -0.023       0.019
+FEMALE_RATIO     0.3029      0.059      5.134      0.000       0.187       0.419
+WHITE_RATIO      0.0481      0.016      3.066      0.002       0.017       0.079
+FRPM_RATE       -0.2355      0.011    -20.628      0.000      -0.258      -0.213
+==============================================================================
+Omnibus:                      429.972   Durbin-Watson:                   1.008
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              522.831
+Skew:                          -0.621   Prob(JB):                    2.94e-114
+Kurtosis:                       3.522   Cond. No.                         60.7
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

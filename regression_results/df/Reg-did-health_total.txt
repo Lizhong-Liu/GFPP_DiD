@@ -1,0 +1,30 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           HEALTH_TOTAL   R-squared:                       0.276
+Model:                            OLS   Adj. R-squared:                  0.276
+Method:                 Least Squares   F-statistic:                     1152.
+Date:                Tue, 28 Nov 2017   Prob (F-statistic):               0.00
+Time:                        12:05:04   Log-Likelihood:                 16948.
+No. Observations:               18153   AIC:                        -3.388e+04
+Df Residuals:                   18146   BIC:                        -3.383e+04
+Df Model:                           6                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept        0.5821      0.010     56.369      0.000       0.562       0.602
+I                0.0096      0.004      2.313      0.021       0.001       0.018
+D               -0.0023      0.002     -1.042      0.298      -0.007       0.002
+D:I             -0.0184      0.005     -4.071      0.000      -0.027      -0.010
+FEMALE_RATIO     0.4387      0.020     22.098      0.000       0.400       0.478
+WHITE_RATIO      0.0781      0.006     13.809      0.000       0.067       0.089
+FRPM_RATE       -0.1453      0.004    -35.468      0.000      -0.153      -0.137
+==============================================================================
+Omnibus:                     5113.281   Durbin-Watson:                   0.838
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            25114.158
+Skew:                          -1.282   Prob(JB):                         0.00
+Kurtosis:                       8.160   Cond. No.                         50.0
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
