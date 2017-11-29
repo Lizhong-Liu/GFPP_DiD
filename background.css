@@ -68,3 +68,7 @@ table {
   border-spacing: 0px;
   margin: 10px 30px;
 }
+
+.inline-block {
+   display: inline-block;
+}
