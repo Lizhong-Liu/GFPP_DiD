@@ -1,0 +1,31 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                F_TOTAL   R-squared:                       0.110
+Model:                            OLS   Adj. R-squared:                  0.110
+Method:                 Least Squares   F-statistic:                     448.4
+Date:                Wed, 29 Nov 2017   Prob (F-statistic):               0.00
+Time:                        14:23:30   Log-Likelihood:                 8717.7
+No. Observations:               18153   AIC:                        -1.742e+04
+Df Residuals:                   18147   BIC:                        -1.738e+04
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept       -0.0530      0.005     -9.758      0.000      -0.064      -0.042
+D                0.0036      0.003      1.179      0.238      -0.002       0.010
+ENR_TOTAL     2.502e-05   1.57e-06     15.902      0.000    2.19e-05    2.81e-05
+FEMALE_RATIO     0.4386      0.031     14.003      0.000       0.377       0.500
+WHITE_RATIO      0.0366      0.009      4.101      0.000       0.019       0.054
+FRPM_RATE       -0.1370      0.006    -21.219      0.000      -0.150      -0.124
+==============================================================================
+Omnibus:                     1774.447   Durbin-Watson:                   0.962
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             3149.656
+Skew:                          -0.682   Prob(JB):                         0.00
+Kurtosis:                       4.518   Cond. No.                     2.18e+04
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.18e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.

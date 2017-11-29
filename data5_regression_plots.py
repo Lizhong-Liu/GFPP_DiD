@@ -41,8 +41,14 @@ for y in dependents:
     result = open("regression_results/df/Reg-control-{}.txt".format(y.lower()), "w")
     result.write(model.summary().as_text())
 
-# Baseline balance test.
+# Baseline analysis and balance test.
 data = df[df['I'] == 0]
+tab = data.groupby(by='D').mean()[['ENR_TOTAL','FEMALE_COUNT','FEMALE_RATIO','WHITE_COUNT','WHITE_RATIO','FRPM_COUNT','FRPM_RATE']]
+tab.index.name = None
+tab = tab.transpose().rename(columns={0:'Treatment',1:'Control'})
+tab = tab.round(decimals=2)
+print(tab)
+
 for c in controls:
     formula = "{} ~ D".format(c)
     ols = smf.ols(formula=formula, data=data)
@@ -72,7 +78,7 @@ for i in dependents:
     plt.show()
 
 # Restrict samples to schools with data from 2011 to 2015.
-# Robustness test.
+# Robustness test r1.
 df1 = df[df['YEAR'] > 2010]
 dic = {}
 for i in df1['CDS_CODE']:
@@ -84,8 +90,14 @@ keys = [i for i in dic if dic[i] == 5]
 df1.set_index(['CDS_CODE', 'YEAR'], inplace=True)
 df1 = df1.loc[keys, :]
 
-# Baseline analysis.
+# Baseline analysis and analysis.
 baseline = df1[df1['I'] == 0]
+tab = baseline.groupby(by='D').mean()[['ENR_TOTAL','FEMALE_COUNT','FEMALE_RATIO','WHITE_COUNT','WHITE_RATIO','FRPM_COUNT','FRPM_RATE']]
+tab.index.name = None
+tab = tab.transpose().rename(columns={0:'Treatment',1:'Control'})
+tab = tab.round(decimals=2)
+print(tab)
+
 for c in controls:
     ols = smf.ols(formula="{} ~ D".format(c), data=baseline)
     model = ols.fit()
@@ -110,4 +122,20 @@ for y in dependents:
                   data=df1)
     model = ols.fit()
     result = open("regression_results/df1/Reg-didda-{}.txt".format(y.lower()), "w")
+    result.write(model.summary().as_text())
+
+# Robustness test 2: fixed effect model.
+fe = df1.reset_index()
+fe_mean = fe.groupby('CDS_CODE', as_index=False).mean()
+d_means = [fe_mean.loc[0, i] for i in dependents]
+for i in range(len(d_means)):
+    fe.loc[:, dependents[i]] = fe['{}'.format(dependents[i])] - d_means[i]
+c_means = [fe_mean.loc[0, i] for i in controls]
+for i in range(len(c_means)):
+    fe.loc[:, controls[i]] = fe['{}'.format(controls[i])] - c_means[i]
+
+for y in dependents:
+    ols = smf.ols(formula="{} ~ D + ENR_TOTAL + FEMALE_RATIO + WHITE_RATIO + FRPM_RATE".format(y), data=fe)
+    model = ols.fit()
+    result = open("regression_results/df1/Reg-fe-{}.txt".format(y.lower()), "w")
     result.write(model.summary().as_text())
