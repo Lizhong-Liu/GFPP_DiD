@@ -8,7 +8,7 @@ sns.set_style("whitegrid", rc={'axes.linewidth': 2.5})
 sns.set_context('notebook', font_scale=1.45, rc={"lines.linewidth": 3, "figure.figsize" : (7, 3)})
 
 # From 2004 to 2015.
-df = pd.read_csv('school_merged.csv', sep='\t', low_memory=False)
+df = pd.read_csv('data/school_merged.csv', sep='\t', low_memory=False)
 df.rename(columns={'FRPM_%': 'FRPM_RATE'}, inplace=True)
 df = df[df['FRPM_RATE'] != 'N / A']
 df['FRPM_RATE'] = df['FRPM_RATE'].astype(float)
