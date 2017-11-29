@@ -59,4 +59,4 @@ results = pd.concat(for_concat, ignore_index=True)
 cols = ["YEAR", "CDS_CODE", "FRPM_COUNT", "FRPM_%"]
 la_frpm = results[cols]
 
-la_frpm.to_csv("data/school_frpm.csv", sep='\t', encoding='utf-8')
+la_frpm.to_csv("data/school_frpm.csv")

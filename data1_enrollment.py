@@ -88,4 +88,4 @@ cols = ['COUNTY','DISTRICT','SCHOOL','ENR_TOTAL','FEMALE_COUNT','FEMALE_RATIO','
  'GR_10','GR_11','GR_12','GR_2','GR_3','GR_4','GR_5','GR_6','GR_7','GR_8','GR_9','KDGN','UNGR_ELM','UNGR_SEC','ADULT']
 la_enr = la_enr[cols]
 
-la_enr.to_csv("data/school_enrollment.csv", sep='\t', encoding='utf-8')
+la_enr.to_csv("data/school_enrollment.csv")
