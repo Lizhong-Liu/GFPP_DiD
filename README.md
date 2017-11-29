@@ -26,7 +26,6 @@ The following list exhibits potential deliverables of our project:
 #### Variables and Data Source
 Our model tries to test the potential impacts of GFPP on mutiple socio-economic indicators: health, human capital (education), and household economic development. Within these three categories, we further specify the variables as following:
 - Health:
-  - [Children Food Security Data (Los Angeles Health Department (LAHD))](http://www.publichealth.lacounty.gov/ha/HA_DATA_TRENDS.htm#Child);
   - [Physical Fitness (California Department of Education (CDE))](https://www.cde.ca.gov/ta/tg/pf/pftresearch.asp)
 - School Demographics:
   - [Enrollment (CDE)](https://www.cde.ca.gov/ds/sd/sd/filesenr.asp);
