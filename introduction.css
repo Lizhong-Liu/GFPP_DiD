@@ -1,4 +1,4 @@
-{
+* {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -36,7 +36,6 @@ div.tab button.active {
 
 /* Style the tab content */
 div.tabcontent {
-    display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
@@ -49,8 +48,10 @@ h2 {
 
 /* Style the image */
 img {
-    display: block;
-    margin: auto;
+    margin: 0px 40px;
     width: 50%;
     float: right;
+    border: 10px;
+    border-style: solid;
+    border-color: white;
 }
