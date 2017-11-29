@@ -46,6 +46,9 @@ div.tab button.active {
 h2 {
   color: #ff8000;
 }
+h3 {
+  color: grey;
+}
 
 /* Style the image */
 img {
