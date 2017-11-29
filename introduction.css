@@ -1,4 +1,4 @@
-{
+* {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -43,21 +43,13 @@ div.tab button.active {
 }
 
 /* Style the headers */
-h1 {
-  color: #ccc;
-}
-
 h2 {
-  color: #ccc;
+  color: #ff8000;
 }
 
-/* Style the table */
-table {
-  border-width: 0px 0px 5px 0px;
-  border-style: solid;
-  border-color: #ccc;
-  background: #ccc;
-  padding: 0px;
-  border-spacing: 0px;
-  margin: 10px 30px;
+/* Style the image */
+img {
+    display:block;
+    margin: auto;
+    width:50%;
 }
