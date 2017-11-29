@@ -13,7 +13,7 @@ import pandas as pd
 # In[10]:
 
 
-counties = gpd.read_file("CA_counties/CA_counties.shp")
+counties = gpd.read_file("data/CA_counties/CA_counties.shp")
 counties["Counties"] = counties["NAMELSAD"]
 counties = counties.set_index("Counties")
 counties.plot().set_axis_off()
