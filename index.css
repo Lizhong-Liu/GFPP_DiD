@@ -41,3 +41,23 @@ div.tab button.active {
     border: 1px solid #ccc;
     border-top: none;
 }
+
+/* Style the headers */
+h1 {
+  color: #ccc;
+}
+
+h2 {
+  color: #ccc;
+}
+
+/* Style the table */
+table {
+  border-width: 0px 0px 5px 0px;
+  border-style: solid;
+  border-color: #ccc;
+  background: #ccc;
+  padding: 0px;
+  border-spacing: 0px;
+  margin: 10px 30px;
+}
