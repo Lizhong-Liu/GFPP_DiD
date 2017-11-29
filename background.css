@@ -59,7 +59,7 @@ img {
 
 /* Style the image */
 table {
-  border-width: 0px 0px 5px 0px;
+  border-width: 5px 0px 5px 0px;
   border-style: solid;
   border-color: #ff8000;
   background: #eee;
