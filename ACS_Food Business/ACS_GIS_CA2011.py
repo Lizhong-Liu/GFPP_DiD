@@ -64,7 +64,7 @@ magri = merged_Agr.to_crs(epsg = 2225).plot(column = "ACS_11", cmap = "Blues",
                                      edgecolor = "grey", figsize = (5,5),legend = True,k=10)
 magri.set_title('Number of Agriculture Related Business in California 2011', fontsize = 10, y = 1.15)
 magri.set_axis_off()
-plt.savefig('GIS_Agriculture_11.pdf')
+plt.savefig('plots/GIS_Agriculture_11.pdf')
 
 
 # In[16]:
@@ -75,7 +75,7 @@ mret = merged_Ret.to_crs(epsg = 2225).plot(column = "ACS_11", cmap = "Greens",
                                      edgecolor = "grey", figsize = (5, 5),legend = True,k=10)
 mret.set_title('Number of Retail Related Business in California 2011', fontsize = 10, y = 1.15)
 mret.set_axis_off()
-plt.savefig('GIS_Retail_11.pdf')
+plt.savefig('plots/GIS_Retail_11.pdf')
 
 
 # In[17]:
@@ -86,7 +86,7 @@ mwho = merged_Who.to_crs(epsg = 2225).plot(column = "ACS_11", cmap = "Reds",
                                      edgecolor = "grey", figsize = (5, 5),legend = True,k=10)
 mwho.set_title('Number of Wholesale Related Business in California 2011', fontsize = 10, y = 1.15)
 mwho.set_axis_off()
-plt.savefig('GIS_Wholesale_11.pdf')
+plt.savefig('plots/GIS_Wholesale_11.pdf')
 
 
 # In[18]:
@@ -97,4 +97,4 @@ mfs = merged_Fs.to_crs(epsg = 2225).plot(column = "ACS_11", cmap = "Purples",
                                      edgecolor = "grey", figsize = (5, 5),legend = True,k=10)
 mfs.set_title('Number of Food Services Related Business in California 2011', fontsize = 10, y = 1.15)
 mfs.set_axis_off()
-plt.savefig('GIS_FoodServices_11.pdf')
+plt.savefig('plots/GIS_FoodServices_11.pdf')

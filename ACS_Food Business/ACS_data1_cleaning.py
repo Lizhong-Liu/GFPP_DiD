@@ -151,7 +151,7 @@ Agriculture = pd.concat([ACS_05['Agriculture'],
                          ACS_16['Agriculture']],
                         keys=['ACS_05', 'ACS_06', 'ACS_07', 'ACS_08', 'ACS_09', 'ACS_10','ACS_11','ACS_12', 'ACS_13', 'ACS_14', 'ACS_15', 'ACS_16'],
                         axis=1)
-Agriculture.to_csv('ACS_Agriculture.csv', sep=',')
+Agriculture.to_csv('data/ACS_Agriculture.csv', sep=',')
 Agriculture_LA = Agriculture.loc['Los Angeles County, California'].to_frame('Agriculture')
 
 
@@ -172,7 +172,7 @@ Wholesale = pd.concat([ACS_05['Wholesale'],
                          ACS_16['Wholesale']],
                       keys=['ACS_05', 'ACS_06', 'ACS_07', 'ACS_08', 'ACS_09', 'ACS_10','ACS_11','ACS_12', 'ACS_13', 'ACS_14', 'ACS_15', 'ACS_16'],
                         axis=1)
-Wholesale.to_csv('ACS_Wholesale.csv', sep=',')
+Wholesale.to_csv('data/ACS_Wholesale.csv', sep=',')
 Wholesale_LA = Wholesale.loc['Los Angeles County, California'].to_frame('Wholesale')
 
 
@@ -193,7 +193,7 @@ Retail = pd.concat([ACS_05['Retail'],
                          ACS_16['Retail']],
                       keys=['ACS_05', 'ACS_06', 'ACS_07', 'ACS_08', 'ACS_09', 'ACS_10', 'ACS_11','ACS_12', 'ACS_13', 'ACS_14', 'ACS_15', 'ACS_16'],
                         axis=1)
-Retail.to_csv('ACS_Retail.csv', sep=',')
+Retail.to_csv('data/ACS_Retail.csv', sep=',')
 Retail_LA= Retail.loc['Los Angeles County, California'].to_frame('Retail')
 
 
@@ -214,7 +214,7 @@ FoodServices = pd.concat([ACS_05['Food Services'],
                          ACS_16['Food Services']],
                       keys=['ACS_05', 'ACS_06', 'ACS_07', 'ACS_08', 'ACS_09', 'ACS_10', 'ACS_11','ACS_12', 'ACS_13', 'ACS_14', 'ACS_15', 'ACS_16'],
                         axis=1)
-FoodServices.to_csv('ACS_FoodServices.csv', sep=',')
+FoodServices.to_csv('data/ACS_FoodServices.csv', sep=',')
 FoodServices_LA = FoodServices.loc['Los Angeles County, California'].to_frame('FoodServices')
 
 
@@ -225,7 +225,7 @@ ACS_LA = pd.concat([Agriculture_LA,Wholesale_LA,Retail_LA, FoodServices_LA], axi
 ACS_LA.index.name = 'Year'
 ACS_LA.reset_index(level=0, inplace=True)
 ACS_LA[['Agr_IR','Who_IR','Ret_IR','Fds_IR']]=ACS_LA[['Agriculture','Wholesale','Retail','FoodServices']].pct_change()
-ACS_LA.to_csv('ACS_LA.csv', sep=',')
+ACS_LA.to_csv('data/ACS_LA.csv', sep=',')
 
 
 # In[19]:
@@ -236,7 +236,7 @@ plt.ylabel('Number of Employment')
 plt.yticks(np.arange(0,30000,5000))
 plt.xlabel('Year')
 plt.title('Number of Employment in Agriculture Industry from 2005 to 2016')
-plt.savefig('Agriculture_LA.pdf')
+plt.savefig('plots/Agriculture_LA.pdf')
 
 
 # In[20]:
@@ -247,7 +247,7 @@ plt.ylabel('Number of Employment')
 plt.yticks(np.arange(100000,300000,50000))
 plt.xlabel('Year')
 plt.title('Number of Employment in Wholesale Industry from 2005 to 2016')
-plt.savefig('Wholesale_LA.pdf')
+plt.savefig('plots/Wholesale_LA.pdf')
 
 
 # In[21]:
@@ -258,7 +258,7 @@ plt.ylabel('Number of Employment')
 plt.yticks(np.arange(0,750000,100000))
 plt.xlabel('Year')
 plt.title('Number of Employment in Retail Industry from 2005 to 2016')
-plt.savefig('Retail_LA.pdf')
+plt.savefig('plots/Retail_LA.pdf')
 
 
 # In[22]:
@@ -269,7 +269,7 @@ plt.ylabel('Number of Employment')
 plt.yticks(np.arange(0,500000,50000))
 plt.xlabel('Year')
 plt.title('Number of Employment in Food Services Industry from 2005 to 2016')
-plt.savefig('FoodServices_LA.pdf')
+plt.savefig('plots/FoodServices_LA.pdf')
 
 
 # In[39]:
@@ -280,7 +280,7 @@ plt.ylabel('Number of Employment')
 plt.xlabel('Year')
 plt.title('Number of Employment in Food Related Industry from 2005 to 2016')
 plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
-plt.savefig('ACS_LA.pdf')
+plt.savefig('plots/ACS_LA.pdf')
 
 
 # In[64]:
@@ -301,4 +301,4 @@ ax.grid(which='minor', alpha=0.2)
 ax.grid(which='major', alpha=0.5)
 plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 ax.axvspan(6, 11, alpha=0.1, color='red')
-plt.savefig('ACS_LA_IR.pdf')
+plt.savefig('plots/ACS_LA_IR.pdf')
