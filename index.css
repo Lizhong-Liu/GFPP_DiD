@@ -67,7 +67,7 @@ table {
 /* Style the box text*/
 div.boxed {
   border: 1px solid grey ;
-  margin: 5%;
+  margin: 5% , 5%;
   font size: 60%;
 }
 
