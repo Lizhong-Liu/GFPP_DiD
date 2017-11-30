@@ -4,7 +4,7 @@ Dep. Variable:              TXS_TOTAL   R-squared:                       0.023
 Model:                            OLS   Adj. R-squared:                  0.023
 Method:                 Least Squares   F-statistic:                     71.14
 Date:                Tue, 28 Nov 2017   Prob (F-statistic):           5.35e-88
-Time:                        12:05:04   Log-Likelihood:                 9529.7
+Time:                        16:18:36   Log-Likelihood:                 9529.7
 No. Observations:               18153   AIC:                        -1.905e+04
 Df Residuals:                   18146   BIC:                        -1.899e+04
 Df Model:                           6                                         

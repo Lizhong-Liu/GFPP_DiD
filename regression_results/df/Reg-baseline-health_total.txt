@@ -4,7 +4,7 @@ Dep. Variable:              FRPM_RATE   R-squared:                       0.000
 Model:                            OLS   Adj. R-squared:                 -0.000
 Method:                 Least Squares   F-statistic:                    0.2519
 Date:                Tue, 28 Nov 2017   Prob (F-statistic):              0.616
-Time:                        12:05:04   Log-Likelihood:                -2624.7
+Time:                        16:18:36   Log-Likelihood:                -2624.7
 No. Observations:               13640   AIC:                             5253.
 Df Residuals:                   13638   BIC:                             5268.
 Df Model:                           1                                         
