@@ -71,3 +71,27 @@ table {
 .inline-block {
    display: inline-block;
 }
+
+/* Style the box text*/
+div.boxed {
+  border: 1px solid grey ;
+}
+
+/* Style the headers */
+h1{
+  font size: 200%
+}
+h2{
+  color: #ff8000;
+  font size: 150%
+}
+h3{
+  color: grey;
+  font size: 100%
+}
+
+/* Style the font size*/
+p {
+  font size: 90%;
+}
+
