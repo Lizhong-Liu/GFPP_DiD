@@ -6,7 +6,7 @@ import geopandas as gpd
 import pandas as pd
 import folium
 
-geo_df = gpd.read_file("data/CA_counties/CA_counties.shp", index='NAMELSAD')
+geo_df = gpd.read_file("data/CA_counties/CA_counties.shp")
 
 files = ['ACS_Agriculture.csv', 'ACS_FoodServices.csv', 'ACS_Retail.csv', 'ACS_Wholesale.csv']
 ft = []
@@ -31,12 +31,17 @@ m = folium.Map([37, -119],
                tiles='cartodbpositron',
                zoom_start=6, max_zoom=14, min_zoom=4)
 
+name = ['Agriculture', 'Food Services', 'Retail', 'Wholesale']
+ft = geo_df.columns[-8:]
+
 # Agriculture
-folium.Marker([34.054, -118.244], popup='Los Angeles - 2011: {}, 2015: {}'.format(la[0], la[1])).add_to(m)
-colormap1 = folium.LinearColormap(("white", "purple"),
-                                    vmin = 0,
-                                    vmax = max_formap[0],
-                                    caption = 'Employment in {}'.format(name[0]))
+mk1 = folium.Marker([34.1, -118.2], popup='LA (Agriculture) 2011: {}, 2015: {}'.format(la[0], la[1]),
+                    icon=folium.Icon(color='green',icon='info-sign'))
+mk1.add_to(m)
+colormap1 = folium.LinearColormap(("white", "green"),
+                                 vmin = 0,
+                                 vmax = max_formap[0],
+                                 caption = 'Employment in {}'.format(name[0]))
 colormap1.add_to(m)
 for c in ft[:2]:
     folium.GeoJson(geo_df, name = c,
@@ -45,11 +50,13 @@ for c in ft[:2]:
                    "color" : "black", "weight" : 1, "fillOpacity" : 0.4}).add_to(m)
 
 # Food Services
-folium.Marker([34.054, -118.244], popup='Los Angeles - 2011: {}, 2015: {}'.format(la[2], la[3])).add_to(m)
+mk2 = folium.Marker([34.054, -118.244], popup='LA (Food Service) 2011: {}, 2015: {}'.format(la[2], la[3]),
+                   icon=folium.Icon(color='orange',icon='info-sign'))
+mk2.add_to(m)
 colormap2 = folium.LinearColormap(("white", "orange"),
-                                    vmin = 0,
-                                    vmax = max_formap[1],
-                                    caption = 'Employment in {}'.format(name[1]))
+                                 vmin = 0,
+                                 vmax = max_formap[1],
+                                 caption = 'Employment in {}'.format(name[1]))
 colormap2.add_to(m)
 for c in ft[2:4]:
     folium.GeoJson(geo_df, name = c,
@@ -58,11 +65,13 @@ for c in ft[2:4]:
                    "color" : "black", "weight" : 1, "fillOpacity" : 0.4}).add_to(m)
 
 # Retail
-folium.Marker([34.054, -118.244], popup='Los Angeles - 2011: {}, 2015: {}'.format(la[4], la[5])).add_to(m)
+mk3 = folium.Marker([34.15, -118.25], popup='LA (Retail) 2011: {}, 2015: {}'.format(la[4], la[5]),
+                    icon=folium.Icon(color='red',icon='info-sign'))
+mk3.add_to(m)
 colormap3 = folium.LinearColormap(("white", "red"),
-                                    vmin = 0,
-                                    vmax = max_formap[2],
-                                    caption = 'Employment in {}'.format(name[2]))
+                                 vmin = 0,
+                                 vmax = max_formap[2],
+                                 caption = 'Employment in {}'.format(name[2]))
 colormap3.add_to(m)
 for c in ft[4:6]:
     folium.GeoJson(geo_df, name = c,
@@ -71,11 +80,13 @@ for c in ft[4:6]:
                    "color" : "black", "weight" : 1, "fillOpacity" : 0.4}).add_to(m)
 
 # Wholesale
-folium.Marker([34.054, -118.244], popup='Los Angeles - 2011: {}, 2015: {}'.format(la[6], la[7])).add_to(m)
+mk4 = folium.Marker([34.2, -118.3], popup='LA (Wholesale) 2011: {}, 2015: {}'.format(la[6], la[7]),
+                   icon=folium.Icon(color='blue',icon='info-sign'))
+mk4.add_to(m)
 colormap4 = folium.LinearColormap(("white", "blue"),
-                                    vmin = 0,
-                                    vmax = max_formap[3],
-                                    caption = 'Employment in {}'.format(name[3]))
+                                 vmin = 0,
+                                 vmax = max_formap[3],
+                                 caption = 'Employment in {}'.format(name[3]))
 colormap4.add_to(m)
 for c in ft[6:]:
     folium.GeoJson(geo_df, name = c,
@@ -84,8 +95,4 @@ for c in ft[6:]:
                    "color" : "black", "weight" : 1, "fillOpacity" : 0.4}).add_to(m)
 
 m.add_child(folium.LayerControl())
-m.save("ca_folium.html")
-
-
-m.add_child(folium.LayerControl(collapsed = False))
 m.save("ca_folium.html")
