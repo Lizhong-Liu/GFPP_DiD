@@ -25,6 +25,10 @@ div.tab button {
     transition: 0.3s;
 }
 
+div.tab button.tablinks {
+    font size: 60%;
+}
+
 /* Change background color of buttons on hover */
 div.tab button:hover {
     background-color: #ddd;
@@ -62,7 +66,7 @@ table {
   padding: 5px;
   border-spacing: 0px;
   margin: 10px 30px;
-  font size: 2;
+  font size: 60%;
 }
 
 /* Style the box text*/
