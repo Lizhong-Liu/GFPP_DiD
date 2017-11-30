@@ -13,7 +13,7 @@ pft.set_index(["CDS_CODE", "YEAR"], inplace=True)
 la_gfpp = pd.merge(df.reset_index(), pft.reset_index(),
          on=["CDS_CODE", "YEAR"], how="inner").set_index(["CDS_CODE", "YEAR"])
 
-frpm = pd.read_csv("data/school_frpm.csv", usecols=[1,2,3,4], converters={"CDS_CODE": str})
+frpm = pd.read_csv("data/school_frpm.csv", usecols=[1,5,6,7], converters={"CDS_CODE": str})
 frpm = frpm[frpm["CDS_CODE"].map(lambda x: x.startswith("19"))]
 frpm["CDS_CODE"] = frpm["CDS_CODE"].astype(int)
 frpm.set_index(["CDS_CODE", "YEAR"], inplace=True)

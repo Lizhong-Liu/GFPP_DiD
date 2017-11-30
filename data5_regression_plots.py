@@ -4,21 +4,12 @@ import pandas as pd
 import statsmodels.formula.api as smf
 import matplotlib.pyplot as plt
 import seaborn as sns
+import sqlite3
 sns.set_style("whitegrid", rc={'axes.linewidth': 2.5})
 sns.set_context('notebook', font_scale=1.45, rc={"lines.linewidth": 3, "figure.figsize" : (7, 3)})
 
-# From 2004 to 2015.
-df = pd.read_csv('data/school_merged.csv', sep='\t', low_memory=False)
-df.rename(columns={'FRPM_%': 'FRPM_RATE'}, inplace=True)
-df = df[df['FRPM_RATE'] != 'N / A']
-df['FRPM_RATE'] = df['FRPM_RATE'].astype(float)
-df.dropna(subset=['DISTRICT', 'SCHOOL', 'FRPM_RATE'], how='any', inplace=True)
-df['D'] = 0
-df.loc[df['DISTRICT'].str.contains('Unified'), 'D'] = 1
-df['I'] = 0
-df.loc[df['YEAR'] > 2012, 'I'] = 1
-df.loc[df['YEAR'] < 2012, 'I'] = 0
-df['D*I'] = df['I'] * df['D']
+con = sqlite3.connect("school_gfpp.sqlite")
+with open("data_merge.sql") as f: df = pd.read_sql(f.read(), con)
 
 controls = ['FEMALE_RATIO', 'WHITE_RATIO', 'FRPM_RATE']
 dependents = ['AC_TOTAL', 'AS_TOTAL', 'BC_TOTAL', 'F_TOTAL', 'TXS_TOTAL', 'UBS_TOTAL', 'HEALTH_TOTAL']
