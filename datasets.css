@@ -57,7 +57,7 @@ img {
     float: right;
 }
 
-/* Style the image */
+/* Style the table */
 table {
   border-width: 0px 0px 5px 0px;
   border-style: solid;
@@ -66,4 +66,27 @@ table {
   padding: 0px;
   border-spacing: 0px;
   margin: 10px 30px;
+}
+
+/* Style the box text*/
+div.boxed {
+  border: 1px solid grey ;
+}
+
+/* Style the headers */
+h1{
+  font size: 200%
+}
+h2{
+  color: #ff8000;
+  font size: 150%
+}
+h3{
+  color: grey;
+  font size: 100%
+}
+
+/* Style the font size*/
+p {
+  font size: 90%;
 }
