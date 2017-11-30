@@ -40,6 +40,7 @@ div.tabcontent {
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+    font size: 80%;
 }
 
 /* Style the image */
@@ -58,17 +59,17 @@ table {
   border-style: solid;
   border-color: #ff8000;
   background: #eee;
-  padding: 0px;
+  padding: 5px;
   border-spacing: 0px;
   margin: 10px 30px;
-  font size: 60%;
+  font size: 2;
 }
 
 /* Style the box text*/
 div.boxed {
   border: 1px solid grey ;
-  margin: 5% , 5%, 5%, 5%;
-  padding: 5% , 5%, 5%, 5%;
+  margin: 15px;
+  padding: 15px;
   font size: 60%;
 }
 
