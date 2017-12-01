@@ -3,7 +3,7 @@
 **Group Member: [Manyi Wang](@manyiw), [Yiran Hao](@chiertu), [Lizhong Liu](@Lizhong-Liu)**
 
 
-**This README is a guideline showing every step of the project. It clarify all the files stored in thie repository. For further details of the results, please refer to our [website](https://lizhong-liu.github.io/GFPP_DiD/).**
+**This README is a guideline showing every step of the project. It clarifies all the files stored in thie repository. For further details of the project results, please refer to our [website](https://lizhong-liu.github.io/GFPP_DiD/).**
 
 
 #### GFPP Overview
@@ -13,7 +13,7 @@ A more insightful overview of GFPP can be found on the website of [Center for Go
 
 
 #### Project Goal
-Our project aims to identify the causal relations between the implementation of this program and local socio-economic development by applying a Difference-in-difference (DiD) analysis. As GFPP has been marked as a priority in several other cities, including Austin, Chicago, Cincinnati, New York, Oakland and Twin Cities, and there lack quantitative evaluation of the program, our project can serve as a reference for these other cities in the potential outcomes of GFPP.
+Our project aims to identify the causal relations between the implementation of this program and local socio-economic development by applying a Difference-in-difference (DiD) analysis. As GFPP has been marked as a priority in several other cities, including Austin, Chicago, Cincinnati, Oakland and Twin Cities, and there lack quantitative evaluation of the program, our project can serve as a reference for these other cities in the potential outcomes of GFPP.
 
 
 #### Project Design
@@ -43,7 +43,7 @@ We divide the project into two parts: regression analysis and ACS analysis. For 
     - School enrollment and demographics: data1_enrollment.py
     - School-level physical fitness test results: data2_pft.py
     - School-level poverty data (we use school-level enrollment rate of the [Free and Reduced Price Meals Program](https://www.fns.usda.gov/school-meals/applying-free-and-reduced-price-school-meals) as a proxy: data3_frpm.py
-  - With the codes above, we create three .csv files storing these three variables. We also use these .csv files to create a sqlite database which is available to the public for future reference. All these data files are saved in the folder - "data":
+  - With the codes above, we create three .csv files storing these variables. We also use these .csv files to create a sqlite database which is available to the public for future reference. All these data files are saved in the folder - "data":
     - School enrollment and demographics: school_enrollment.csv
     - School-level physical fitness test results: school_pft.csv
     - School-level poverty: school_pft.csv
@@ -55,7 +55,7 @@ We divide the project into two parts: regression analysis and ACS analysis. For 
   - We also use pandas to merge data and generate a merged .csv file (also saved in "data" folder):
     - Merged .csv table: school_merged.csv (just for future reference)
 - Regression analysis:
-  - We first apply the DiD model on the entire dataset, but find that in 2011, the physical fitness test records fluctuated greatly. This can be due to the fact that the way CDE records this data differently from 2011.
+  - We first apply the DiD model on the entire dataset, but find that in 2011, the physical fitness test records fluctuate greatly. This can be due to the fact that CDE records this data differently since 2011.
   - Thus, we resample the data, using data from 2011 to 2015, and include only the schools that have records in all these years. We then apply the DiD model again on the resampled data. This analysis serves as a robustness test to the first regression.
   - We do a second robustness test with the resampled data. In this regression, we use a fixed effect model. The results are quite robust.
   - To visually identify the differences between treatment and control group and the changes over time, we also apply data visualization on both the entire dataset and the resampled data.
@@ -64,7 +64,7 @@ We divide the project into two parts: regression analysis and ACS analysis. For 
     - plots_trends_of_outcomes.py
   - The plots are saved in the "plots" folder and the regression results are saved in "regression_results".
 
-The ACS analysis serves as a background analysis in our project. We use annually county-level data of California's food business from ACS, clean them up and store them in the "data" folder:
+The ACS analysis serves as a background analysis in our project. We use annual county-level data of California's food business from ACS, clean them up and store them in the "data" folder:
 - The codes for cleaning the datasets can be found in the "ACS_Food Business":
   - ACS_data1_cleaning.py
 - The results are saved in "data" folder:
@@ -80,13 +80,13 @@ The ACS analysis serves as a background analysis in our project. We use annually
 
 #### Deliverables and Presentation
 Here, we list all of our deliverable available in this repository.
-- We carefully analyze the results of our regression, also point out caveats and potential improvements of the project. The results, together with the visualization products are presented on our website: [IPPP Final Project: L.Liu, Y.Hao, M.Wang](https://lizhong-liu.github.io/GFPP_DiD/). (You can also find the codes of the website write-up in this root directory)
-- Data files: longitude school-level data in .csv format (from 2004 to 2016).
+- We carefully analyze the results of our regression, also point out caveats and potential improvements of the project. The results, together with the visualization products are presented on our website: [IPPP Final Project: L.Liu, Y.Hao, M.Wang](https://lizhong-liu.github.io/GFPP_DiD/). (You can also find the codes of the website write-up in .html and .css files in the root directory.)
+- Data files: school-level panel data in .csv format (from 2004 to 2016).
 - Sqlite database with all variables used in our regression.
 - Data visualization products in "plots" folder, especially the maps of California county-level food business growth.
 
 
-**Please refer to our website for more details!**
+**This will be a good point to turn to our website for more details!**
 
 
 #### Reference
