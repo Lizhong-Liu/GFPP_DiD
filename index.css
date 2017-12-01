@@ -4,6 +4,7 @@
 
 body {
   margin: 0 10%;
+  background-image:url("http://www.hotel-r.net/im/hotel/es/la-city-1.jpg");
 }
 
 /* Style the tab */
@@ -12,6 +13,38 @@ div.tab {
     border: 1px solid #ccc;
     background-color: #f1f1f1;
     font size: 5;
+}
+
+ul.nav {
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+}
+
+ul.nav li { display: inline; }
+
+ul.nav li a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul.nav li a:hover {
+  background-color: #555;
+  transition: 0s;
+}
+
+ul.nav li a.active {
+  color: #ff8000;
+  background-color:whitesmoke;
+  opacity:0.9;
+  font-weight: bold;
+}
+
+ul.nav li:hover { 
+  background-color: #555;
+  transition: 0s;
 }
 
 /* Style the buttons inside the tab */
@@ -27,7 +60,7 @@ div.tab button {
 }
 
 div.tab button.tablinks {
-    font size: 60%;
+    font-size: 16px;
 }
 
 /* Change background color of buttons on hover */
@@ -45,7 +78,8 @@ div.tabcontent {
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
-    font size: 80%;
+    background:whitesmoke;
+    opacity:0.9;
 }
 
 /* Style the image */
@@ -63,16 +97,17 @@ table {
   border-width: 2px 0px 2px 0px;
   border-style: solid;
   border-color: #ff8000;
-  background: #eee;
+  background: whitesmoke;
   padding: 5px;
   border-spacing: 0px;
   margin: 10px 30px;
-  font size: 60%;
+  font-size: 16px;
 }
 
 /* Style the video */
 iframe {
   margin: auto;
+  text-align: center;
 }
 
 /* Style the box text*/
@@ -80,38 +115,32 @@ div.boxed {
   border: 1px solid grey ;
   margin: 15px;
   padding: 15px;
-  font size: 60%;
+  font-size: 16px;
 }
 
 /* Style the headers */
 h1{
-  font size: 200%;
+  font-size: 36px;
 }
 h2{
   color: #ff8000;
-  font size: 150%
+  font-size: 30px;
 }
 h3{
   color: grey;
-  font size: 100%
+  font-size: 24px;
 }
 
 /* Style the font size*/
 p {
-  font size: 60%;
+  font-size: 18px;
   margin: 15px;
   padding: 15px;
 }
 
-/* Style the video*/
-p.video {
-  width: 600px;
-  margin: 0 auto;
-}
-
 p.addup {
   color: grey;
-  text-align: center;
+  text-align:center;
 }
 
 /* Style the footer*/
@@ -119,5 +148,6 @@ div.footer{
   color:grey;
   font-size: 12px;
   text-align:center;
-  opacity:0.6; 
+  opacity:0.9; 
+  background:whitesmoke;
 }
