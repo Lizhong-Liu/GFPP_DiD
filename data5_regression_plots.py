@@ -9,7 +9,7 @@ sns.set_style("whitegrid", rc={'axes.linewidth': 2.5})
 sns.set_context('notebook', font_scale=1.45, rc={"lines.linewidth": 3, "figure.figsize" : (7, 3)})
 
 con = sqlite3.connect("school_gfpp.sqlite")
-with open("data_merge.sql") as f: df = pd.read_sql(f.read(), con)
+with open("data4_merge.sql") as f: df = pd.read_sql(f.read(), con)
 
 controls = ['FEMALE_RATIO', 'WHITE_RATIO', 'FRPM_RATE']
 dependents = ['AC_TOTAL', 'AS_TOTAL', 'BC_TOTAL', 'F_TOTAL', 'TXS_TOTAL', 'UBS_TOTAL', 'HEALTH_TOTAL']
