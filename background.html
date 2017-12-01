@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-  
+
 <head>
   <title>Final Project: L.Liu, Y.Hao, M.Wang</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:600,500,400,300,200,100,400italic0&subset=latin,greek,latin-ext' rel='stylesheet' type='text/css'>
   <link href="index.css" rel="stylesheet">
 </head>
-  
+
 <body>
-  <h1>Good Food Purchasing Policy in Los Angeles: <br/>
-    Inferences on Impacts
+  <h1>Good Food Purchasing Program in Los Angeles: <br/>
+    Inferences of Impacts
   </h1>
-  
+
 <div class="tab">
   <button class="tablinks" onclick="Introduction"><a href="index.html">Introduction</a></button>
   <button class="tablinks" onclick="Datasets"><a href="datasets.html">Datasets</a></button>
@@ -20,13 +20,13 @@
   <button class="tablinks" onclick="Regression Results"><a href="conclusions.html">Conclusions</a></button>
 </div>
 
-<div id="Background">
+<div id="Background" class="tabcontent">
   <h2>Background Information</h2>
   <h3>Dataset Overview
   </h3>
-    <p>As GFPP also intends to support the development of local business, we also want to test its effects on helping local business thrive. 
+    <p>As GFPP also intends to support the development of local business, we also want to test its effects on helping local business thrive.
     </p>
-    <p>We used data from <a href="https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t">American Community Survey(ACS)</a>, and focused on increments of employment (especially those in food industry) before and after GFPP's adoptation. 
+    <p>We used data from <a href="https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t">American Community Survey(ACS)</a>, and focused on increments of employment (especially those in food industry) before and after GFPP's adoptation.
     </p>
     <p>Based on the availability of ACS database, employment in the following four industries in 30 counties in California were selected.
     </p>
@@ -37,24 +37,24 @@
       <tr><td>Wholesale trade</td>                                           <td>2005-2016</td></tr>
       <tr><td>Accommodation and food services</td>                           <td>2005-2016</td></tr>
     </table>
-  
+
   <b></b>
-  
+
   <h3>Employment in Food Policy Related Industries
   </h3>
     <p>We compared the employment status in food policy related industries between Los Angeles and other 29 Californian counties from 2005 to 2016. The results are shown as below.
     </p>
-    <p>We find that though the agriculture-related employment is relatively low in LA, LA has really large population working in wholesale, retail and food services industires comparing to other counties in California. Such leading role has maintained in the past decade. 
+    <p>We find that though the agriculture-related employment is relatively low in LA, LA has really large population working in wholesale, retail and food services industires comparing to other counties in California. Such leading role has maintained in the past decade.
     </p>
-    <p><embed src="ca_folium.html" width="800" height="600"></p
-  
+    <p class="folium"><embed src="ca_folium.html" width="800" height="600"></p
+
    <b></b>
-  
+
   <h3>Trendings of Employment in the four industries in LA
   </h3>
-    <p><embed src="plots/ACS_LA_IR.pdf" width="600" height="400" type='application/pdf'></p>
-  
+    <p class="line"><embed src="plots/ACS_LA_IR.pdf" width="600" height="400" type='application/pdf'></p>
+
 </div>
-  
+
 </body>
 </html>

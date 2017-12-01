@@ -21,7 +21,7 @@ div.tab button {
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 /* Change background color of buttons on hover */
@@ -65,7 +65,7 @@ table {
   background: #eee;
   padding: 0px;
   border-spacing: 0px;
-  margin: 10px 30px;
+  margin: auto;
 }
 
 .inline-block {
@@ -95,3 +95,10 @@ p {
   font size: 90%;
 }
 
+p.line {
+  margin: auto;
+}
+
+p.folium {
+  margin: auto;
+}

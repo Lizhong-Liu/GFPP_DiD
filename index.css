@@ -11,7 +11,7 @@ div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    font size: 3;
+    font size: 5;
 }
 
 /* Style the buttons inside the tab */
@@ -22,7 +22,8 @@ div.tab button {
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    transition: 0.3s;
+    transition: 0.1s;
+    text-align: center;
 }
 
 div.tab button.tablinks {
@@ -69,6 +70,11 @@ table {
   font size: 60%;
 }
 
+/* Style the video */
+iframe {
+  margin: auto;
+}
+
 /* Style the box text*/
 div.boxed {
   border: 1px solid grey ;
@@ -79,7 +85,8 @@ div.boxed {
 
 /* Style the headers */
 h1{
-  font size: 200%
+  font size: 200%;
+  text-align: center;
 }
 h2{
   color: #ff8000;
@@ -93,4 +100,17 @@ h3{
 /* Style the font size*/
 p {
   font size: 60%;
+  margin: 15px;
+  padding: 15px;
+}
+
+
+p.video {
+  width: 600px;
+  margin: 0 auto;
+}
+
+p.addup {
+  color: grey;
+  text-align: center;
 }
