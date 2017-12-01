@@ -83,6 +83,11 @@ div.boxed {
   font size: 60%;
 }
 
+/* Style the video*/
+div.notes {
+  display:inline
+}
+
 /* Style the headers */
 h1{
   font size: 200%;
@@ -104,7 +109,7 @@ p {
   padding: 15px;
 }
 
-
+/* Style the video*/
 p.video {
   width: 600px;
   margin: 0 auto;
