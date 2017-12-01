@@ -3,6 +3,9 @@
 **Group Member: [Manyi Wang](@manyiw), [Yiran Hao](@chiertu), [Lizhong Liu](@Lizhong-Liu)**
 
 
+**This README is a guideline showing every step of the project. It clarify all the files stored in thie repository. For further details of the results, please refer to our [website](https://lizhong-liu.github.io/GFPP_DiD/).**
+
+
 #### GFPP Overview
 Good Food Purchasing Program (GFPP) is an initiative currently implemented in several municipalities such as Los Angeles, San Francisco, and New York, which is mainly adopted by public institutions (public schools, municipalities, etc.). The bodies practicing such program restrict their purchase of meals by standards of nutrition, of raw material sources, and of envrionmental influences. GFPP has five value criteria: animal welfare, nutrition, support for local business, rights of employees (such as safety and justice), and environmental sustainability. 
 
