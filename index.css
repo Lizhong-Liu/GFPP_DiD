@@ -38,7 +38,7 @@ ul.nav li a:hover {
 ul.nav li a.active {
   color: #ff8000;
   background-color:whitesmoke;
-  opacity:0.8;
+  opacity:0.9;
   font-weight: bold;
 }
 
@@ -79,7 +79,7 @@ div.tabcontent {
     border: 1px solid #ccc;
     border-top: none;
     background:whitesmoke;
-    opacity:0.85;
+    opacity:0.9;
 }
 
 /* Style the image */
@@ -97,7 +97,7 @@ table {
   border-width: 2px 0px 2px 0px;
   border-style: solid;
   border-color: #ff8000;
-  background: #eee;
+  background: whitesmoke;
   padding: 5px;
   border-spacing: 0px;
   margin: 10px 30px;
@@ -107,6 +107,7 @@ table {
 /* Style the video */
 iframe {
   margin: auto;
+  text-align: center;
 }
 
 /* Style the box text*/
@@ -115,7 +116,6 @@ div.boxed {
   margin: 15px;
   padding: 15px;
   font-size: 16px;
-  color:grey;
 }
 
 /* Style the headers */
@@ -148,5 +148,6 @@ div.footer{
   color:grey;
   font-size: 12px;
   text-align:center;
-  opacity:0.6; 
+  opacity:0.9; 
+  background:whitesmoke;
 }
