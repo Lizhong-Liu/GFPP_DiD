@@ -47,28 +47,39 @@
       </table>
     <b><b/>
     <h3>Difference in difference methodology</h3>
-    <p>Our goal is to measure change in BC-healthy student fraction caused by
+    <p>Our goal is to measure change in physically healthy student fraction caused by
       GFPP. However, change in body composition, as well as in a school's
-      BC-healthy student fraction, has a lot of attributable factors other than
+      physically-healthy student fraction, has a lot of attributable factors other than
       the implementation of GFPP. For example, the overall trend towards healthy eating
       might have an effect on students' food choice when they eat outside of schools,
       and in turn leads to a change in students' body composition. Also, a change in
       school curriculum initiated by educational authorities might influence the sports time
       of every student in the state of California, and thus have an effect on
-      schools' BC-healthy student fraction. All these factors can mess up our estimation
-      of GFPP on schools' BC-healthy student fraction. However, as these factors are
+      schools' physically-healthy student fraction. All these factors can mess up our estimation
+      of GFPP on schools' physically-healthy student fraction. However, as these factors are
       common trend that apply for all schools in LA county, we can estimate their
       aggregated effect using DiD model.
     </p>
     <p> Since GFPP is only adopted by the Unified School Districts of LA and not in
       other school districts. We used schools in unified school districts as treatment
-      group and schools in other districts as controlled group. We measure the average BC-healthy
+      group and schools in other districts as controlled group. We measure the average physically-healthy
       students fraction within treatment group and control group. Then we subtract
       the change in treatment group with the change in control group to get a clean
-      effect of GFPP on BC-healthy student fraction.
+      effect of GFPP on physically-healthy student fraction.
     </p>
     <h3>Control for covariates</h3>
-    <p>
+    <p> We are aware that socioeconomic attributes of school influence
+      the number of physically-healthy students in the school. Especially, our
+      control and treatment group might not be randomly constructed and that
+      they are not comparable across sosioeconomic attibutes such as schools' size,
+      poverty level, ethnicity diversity, and gender diversity. That being considered,
+      we performed a balance test between treatment group and control group from
+      the following four dimentions.
+      <tr><th>List of covariates</th>
+      <tr><td>Number of enrollment</td>
+      <tr><td>Fraction of students enrolled in Free and Reduced Price Meals Program</td>
+      <tr><td>Fraction of female students</td>
+      <tr><td>Fraction of white students</td>
     </p>
      <table>
       <caption>Balance Test</caption>
@@ -80,7 +91,8 @@
      </table>
       <p><embed src="plots/FEMALE_RATIO-control.pdf" width="500" height="375" type='application/pdf'></p>
     <h3>Fixed effect</h3>
-
+    <p> We are also aware that
+    </p>
   <b></b>
 
     <h3>SECTION TITLE2</h3>
