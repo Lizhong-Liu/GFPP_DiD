@@ -113,3 +113,11 @@ p.addup {
   color: grey;
   text-align: center;
 }
+
+/* Style the footer*/
+div.footer{
+  color:grey;
+  font-size: 12px;
+  text-align:center;
+  opacity:0.6; 
+}
