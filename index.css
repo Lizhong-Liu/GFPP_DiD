@@ -86,7 +86,6 @@ div.boxed {
 /* Style the headers */
 h1{
   font size: 200%;
-  text-align: center;
 }
 h2{
   color: #ff8000;
@@ -104,7 +103,7 @@ p {
   padding: 15px;
 }
 
-
+/* Style the video*/
 p.video {
   width: 600px;
   margin: 0 auto;
@@ -113,4 +112,12 @@ p.video {
 p.addup {
   color: grey;
   text-align: center;
+}
+
+/* Style the footer*/
+div.footer{
+  color:grey;
+  font-size: 12px;
+  text-align:center;
+  opacity:0.6; 
 }
