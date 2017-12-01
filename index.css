@@ -111,6 +111,7 @@ iframe {
 }
 p.video {
   text-align:center;
+  margin:auto;
 }
 
 /* Style the box text*/
