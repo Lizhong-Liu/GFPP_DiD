@@ -28,5 +28,7 @@ INNER JOIN school_pft ON
      school_pft.YEAR = school_enrollment.Year
 WHERE FRPM_RATE != 'N / A' AND
       FRPM_RATE != '' AND
+      FRPM_COUNT != 'N / A' AND
+      FRPM_COUNT != '' AND
       DISTRICT > 0 AND
       SCHOOL > 0 );
