@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-  
+
 <head>
  <title>Final Project: L.Liu, Y.Hao, M.Wang</title>
  <link href='https://fonts.googleapis.com/css?family=Open+Sans:600,500,400,300,200,100,400italic0&subset=latin,greek,latin-ext' rel='stylesheet' type='text/css'>
  <link href="index.css" rel="stylesheet">
 </head>
-  
+
 <body>
   <h1>Good Food Purchasing Policy in Los Angeles: <br/>
     Inferences on Impacts
   </h1>
-  
+
 <div class="tab">
   <button class="tablinks" onclick="Introduction"><a href="index.html">Introduction</a></button>
   <button class="tablinks" onclick="Datasets"><a href="datasets.html">Datasets</a></button>
@@ -19,27 +19,63 @@
   <button class="tablinks">Regression Results</button>
   <button class="tablinks" onclick="Conclusions"><a href="conclusions.html">Conclusions</a></button>
 </div>
-  
+
 <div id="Regressions" class="tabcontent">
-  
+
   <h2>Regression Results</h2>
-  
-    <h3>SECTION TITLE1</h3>
+
+    <h3>Choice of dependent variable</h3>
+    <p>Our goal is to measure GFPP's impact on student physical fitness.
+      Among all the 6 stduent fitness areas (table 1) monitored by California state,
+      we are most interested in students' finess change in Body Composition.
+      This is because better food quality and a more balanced diet brought by
+      GFPP do not necessarily tranaslate directly to improved body functions
+      such as adrobic capacity, or improved athletic abilities such as muscle strength.
+      However, we believe changes in students' body composition, such as
+      lower fat percentadge expressed in skinfold measurement or BMI (Body Mass Index),
+      response faster to a diet improvement. Therefore, we expect to see a higher
+      fraction of students meeting the healthy body composition standand a few years
+      after the policy was implemented.</p>
+      <table>
+       <caption>table 1</caption>
+       <tr><th>Fitness Areas</th>                         <th>that will be later referred to as</th></tr>
+       <tr><td>Aerobic Capacity</td>                      <td>AS</td></tr>
+       <tr><td>Abdominal Strength & Endurance</td>        <td>AS</td></tr>
+       <tr><td>Upper Body Strength</td>                   <td>UBS</td></tr>
+       <tr><td>Body Composition</td>                      <td>BC</td></tr>
+       <tr><td>Flexibility</td>                           <td>F</td></tr>
+      </table>
+    <b><b/>
+    <h3>Difference in difference methodology</h3>
+    <p>Our goal is to measure the change in BC-healthy student fraction brought by
+      GFPP. However, GFPP is not the only contributing factor to improvement on body
+      composition, and therefore higher BC-healthy stduent fraction.
+      Even in the absence of such a policy, the overall accelerating trend towards healthy eating,
+    </p>
+    <h3>Control for covariates</h3>
+     <table>
+      <caption>Balance Test</caption>
+      <tr><th>Industries</th>                                     <th>Aerobic Capacity</th></tr>   <th>Abdominal Strength</th></tr>     <th>Upper Body Strength</th></tr>
+      <tr><td>Agriculture, forestry, fishing and hunting</td>     <td>2005-2016</td></tr>          <td>2005-2016</td></tr>
+      <tr><td>Retail trade</td>                                   <td>2005-2016</td></tr>          <td>2005-2016</td></tr>
+      <tr><td>Wholesale trade</td>                                <td>2005-2016</td></tr>          <td>2005-2016</td></tr>
+      <tr><td>Accommodation and food services</td>                <td>2005-2016</td></tr>          <td>2005-2016</td></tr>
+     </table>
       <p><embed src="plots/FEMALE_RATIO-control.pdf" width="500" height="375" type='application/pdf'></p>
-      
+
   <b></b>
-  
+
     <h3>SECTION TITLE2</h3>
 
 
   <b></b>
 
-    <h3>SECTION TITLE3</h3>
-      <p><img width=50% src=""></img></p>
-  
+    <h3>CAVEATS</h3>
+      <p></p>
+
    <b></b>
 
 </div>
-  
+
 </body>
 </html>
