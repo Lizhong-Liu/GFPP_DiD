@@ -66,9 +66,12 @@
         that <a href= 'https://www.cde.ca.gov/ta/tg/pf/healthfitzones.asp'>test standards</a> were adjusted
         in year 2006 and 2011. We plotted the testing result to double check whether the change
         of test standards has caused significant disruptance on testing score. </p>
+        <embed src="line_health_trend_control" alt='line plot of health result from 2001 to 2015' width="500" height="300">
         <embed src="line_health_trend_treatment" alt='line plot of health result from 2001 to 2015' width="500" height="300">
+        <embed src="line_health_trend_treatment_resample" alt='line plot of health result from 2001 to 2015' width="500" height="300">
+        <embed src="line_health_trend_control_resample" alt='line plot of health result from 2001 to 2015' width="500" height="300">
       <p>As seen from the plots above, the test standards change in 2011 does cause
-        a sudden spike or plunge in the testing result. Due to lack of expertise in
+        a plunge in the testing result of come fitness measurement. Due to lack of expertise in
         realigning physical test scores, we choose to drop historic data until year 2010.
        </p>
 
@@ -92,6 +95,7 @@
       the change in treatment group with the change in control group to get a clean
       effect of GFPP on physically-healthy student fraction.
     </p>
+ 
     <h3>Baseline Analysis</h3>
     <p>
       Before running the regression, we would like to compare the two groups so as to make sure that they are comparable
@@ -116,7 +120,7 @@
  </br>
     <table align="center" style="margin: 0px auto;">
       <tr><th colspan="5">Table 3. Treatment vs Control on baseline variables</th></tr>
-      <tr><td></td>               <td colspan="2">2001-2015</td>              <td colspan="2">2011-2015</td></tr>
+      <tr><td></td>               <td colspan="2">2001-2015</td>         <td colspan="2">2011-2015</td></tr>
       <tr><td>ENR_TOTAL</td>      <td>882.47</td>    <td>942.30</td>     <td>865.85</td>    <td>876.84</td></tr>
       <tr><td>FEMALE_COUNT</td>   <td>425.06</td>    <td>460.57</td>     <td>422.26</td>    <td>427.97</td></tr>
       <tr><td>FEMALE_RATIO</td>   <td>0.48</td>      <td>0.49</td>       <td>0.49</td>      <td>0.49</td></tr>
@@ -126,8 +130,7 @@
       <tr><td>FRPM_RATE</td>      <td>0.62</td>      <td>0.62</td>       <td>0.64</td>      <td>0.54</td></tr>
     </table>
     </p>
-      <tr><td><img width=50% src="plots/baseline_table1.png"></img></td> <td><img width=50% src="plots/baseline_table_2.png"></img></td></tr>
-    <h3>Robust test: Fixed effect</h3>
+      <h3>Robust test: Fixed effect</h3>
     <p> We are also aware that besides the coraviates we have controlled for,
       school may have other indiviaully-invariant attributes that we haven't accounted for.
       For example, schools have different sports facilities, differnet locations that
