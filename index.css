@@ -4,6 +4,7 @@
 
 body {
   margin: 0 10%;
+  background-image:url("http://www.hotel-r.net/im/hotel/es/la-city-1.jpg");
 }
 
 /* Style the tab */
@@ -45,7 +46,8 @@ div.tabcontent {
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
-    font size: 80%;
+    background:whitesmoke;
+    opacity:0.85;
 }
 
 /* Style the image */
@@ -104,15 +106,9 @@ p {
   padding: 15px;
 }
 
-/* Style the video*/
-p.video {
-  width: 600px;
-  margin: 0 auto;
-}
-
 p.addup {
   color: grey;
-  text-align: center;
+  text-align:center;
 }
 
 /* Style the footer*/
