@@ -83,15 +83,9 @@ div.boxed {
   font size: 60%;
 }
 
-/* Style the video*/
-div.notes {
-  display:inline
-}
-
 /* Style the headers */
 h1{
   font size: 200%;
-  text-align: center;
 }
 h2{
   color: #ff8000;
