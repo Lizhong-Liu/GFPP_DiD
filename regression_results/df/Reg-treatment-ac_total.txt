@@ -1,27 +1,27 @@
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:               AC_TOTAL   R-squared:                       0.197
-Model:                            OLS   Adj. R-squared:                  0.196
-Method:                 Least Squares   F-statistic:                     931.8
-Date:                Tue, 28 Nov 2017   Prob (F-statistic):               0.00
-Time:                        16:18:36   Log-Likelihood:                 4361.8
-No. Observations:               15242   AIC:                            -8714.
-Df Residuals:                   15237   BIC:                            -8675.
+Dep. Variable:               AC_TOTAL   R-squared:                       0.195
+Model:                            OLS   Adj. R-squared:                  0.195
+Method:                 Least Squares   F-statistic:                     901.1
+Date:                Fri, 01 Dec 2017   Prob (F-statistic):               0.00
+Time:                        16:52:37   Log-Likelihood:                 4181.5
+No. Observations:               14876   AIC:                            -8353.
+Df Residuals:                   14871   BIC:                            -8315.
 Df Model:                           4                                         
 Covariance Type:            nonrobust                                         
 ================================================================================
                    coef    std err          t      P>|t|      [0.025      0.975]
 --------------------------------------------------------------------------------
-Intercept        0.4120      0.022     18.480      0.000       0.368       0.456
-I                0.0134      0.003      3.942      0.000       0.007       0.020
-FEMALE_RATIO     0.5633      0.043     12.960      0.000       0.478       0.649
-WHITE_RATIO      0.1753      0.011     15.321      0.000       0.153       0.198
-FRPM_RATE       -0.1900      0.008    -22.931      0.000      -0.206      -0.174
+Intercept        0.4138      0.023     18.347      0.000       0.370       0.458
+I                0.0133      0.003      4.114      0.000       0.007       0.020
+FEMALE_RATIO     0.5585      0.044     12.704      0.000       0.472       0.645
+WHITE_RATIO      0.1740      0.012     15.097      0.000       0.151       0.197
+FRPM_RATE       -0.1896      0.008    -22.650      0.000      -0.206      -0.173
 ==============================================================================
-Omnibus:                      681.142   Durbin-Watson:                   0.929
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):              812.327
-Skew:                          -0.498   Prob(JB):                    4.03e-177
-Kurtosis:                       3.536   Cond. No.                         43.6
+Omnibus:                      651.701   Durbin-Watson:                   1.690
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              772.089
+Skew:                          -0.495   Prob(JB):                    2.20e-168
+Kurtosis:                       3.517   Cond. No.                         43.8
 ==============================================================================
 
 Warnings:

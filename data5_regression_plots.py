@@ -56,17 +56,27 @@ for y in dependents:
     result.write(model.summary().as_text())
 
 # Plot the trend for treatment and control group.
-health_trend_t = df[df['D'] == 1].groupby('YEAR').mean()
-for i in dependents:
-    ax = health_trend_t['{}'.format(i)].plot()
-    ax.set_xlabel('Year')
-    ax.set_ylabel('{}'.format(i))
-    plt.show()
+health_trend_t = treatment.groupby('YEAR', as_index=False).mean()
+health_trend_t['YEAR'].astype(int, inplace=True)
+ax = health_trend_t.plot(x='YEAR', y=['AC_TOTAL', 'AS_TOTAL', 'BC_TOTAL', 'F_TOTAL','TXS_TOTAL', 'UBS_TOTAL', 'HEALTH_TOTAL'])
+plt.ylabel('Fraction of Students Passed')
+plt.xlabel('Year')
+plt.title('Fraction of Students Passed the Physical Fitness Tests')
+plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+ax.grid(which='minor', alpha=0.2)
+ax.grid(which='major', alpha=0.5)
+ax.figure.savefig('line_health_trend_treatment.pdf')
 
-health_trend_c = df[df['D'] == 0].groupby('YEAR').mean()
-for i in dependents:
-    health_trend_c['{}'.format(i)].plot()
-    plt.show()
+health_trend_c = control.groupby('YEAR', as_index=False).mean()
+health_trend_c['YEAR'].astype(int, inplace=True)
+ax = health_trend_c.plot(x='YEAR', y=['AC_TOTAL', 'AS_TOTAL', 'BC_TOTAL', 'F_TOTAL','TXS_TOTAL', 'UBS_TOTAL', 'HEALTH_TOTAL'])
+plt.ylabel('Fraction of Students Passed')
+plt.xlabel('Year')
+plt.title('Fraction of Students Passed the Physical Fitness Tests')
+plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+ax.grid(which='minor', alpha=0.2)
+ax.grid(which='major', alpha=0.5)
+ax.figure.savefig('line_health_trend_control.pdf')
 
 # Restrict samples to schools with data from 2011 to 2015.
 # Robustness test r1.
@@ -78,10 +88,10 @@ for i in df1['CDS_CODE']:
     else:
         dic[i] = 1
 keys = [i for i in dic if dic[i] == 5]
-df1.set_index(['CDS_CODE', 'YEAR'], inplace=True)
+df1.set_index('CDS_CODE', inplace=True)
 df1 = df1.loc[keys, :]
 
-# Baseline analysis and analysis.
+# Baseline analysis.
 baseline = df1[df1['I'] == 0]
 tab = baseline.groupby(by='D').mean()[['ENR_TOTAL','FEMALE_COUNT','FEMALE_RATIO','WHITE_COUNT','WHITE_RATIO','FRPM_COUNT','FRPM_RATE']]
 tab.index.name = None
@@ -94,6 +104,31 @@ for c in controls:
     model = ols.fit()
     result = open("regression_results/df1/Reg-baseline-{}.txt".format(y.lower()), "w")
     result.write(model.summary().as_text())
+
+# Resample health trend.
+treatment1 = df1[df1['D'] == 1]
+health_trend_t1 = treatment1.groupby('YEAR', as_index=False).mean()
+health_trend_t1['YEAR'].astype(int, inplace=True)
+ax = health_trend_t1.plot(x='YEAR', y=['AC_TOTAL', 'AS_TOTAL', 'BC_TOTAL', 'F_TOTAL','TXS_TOTAL', 'UBS_TOTAL', 'HEALTH_TOTAL'])
+plt.ylabel('Fraction of Students Passed')
+plt.xlabel('Year')
+plt.title('Fraction of Students Passed the Physical Fitness Tests')
+plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+ax.grid(which='minor', alpha=0.2)
+ax.grid(which='major', alpha=0.5)
+ax.figure.savefig('line_health_trend_treatment_resample.pdf')
+
+control1 = df1[df1['D'] == 0]
+health_trend_c1 = control1.groupby('YEAR', as_index=False).mean()
+health_trend_c1['YEAR'].astype(int, inplace=True)
+ax = health_trend_c1.plot(x='YEAR', y=['AC_TOTAL', 'AS_TOTAL', 'BC_TOTAL', 'F_TOTAL','TXS_TOTAL', 'UBS_TOTAL', 'HEALTH_TOTAL'])
+plt.ylabel('Fraction of Students Passed')
+plt.xlabel('Year')
+plt.title('Fraction of Students Passed the Physical Fitness Tests')
+plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+ax.grid(which='minor', alpha=0.2)
+ax.grid(which='major', alpha=0.5)
+ax.figure.savefig('line_health_trend_control_resample.pdf')
 
 # regplot.
 for c in controls:
