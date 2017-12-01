@@ -102,6 +102,7 @@ table {
   border-spacing: 0px;
   margin: 10px 30px;
   font-size: 16px;
+  margin: auto;
 }
 
 /* Style the video */
@@ -151,3 +152,8 @@ div.footer{
   opacity:0.9; 
   background:whitesmoke;
 }
+
+p.footer {
+  font-size: 12px;
+}
+
