@@ -65,7 +65,7 @@ plt.title('Fraction of Students Passed the Physical Fitness Tests')
 plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 ax.grid(which='minor', alpha=0.2)
 ax.grid(which='major', alpha=0.5)
-ax.figure.savefig('line_health_trend_treatment.pdf')
+ax.figure.savefig('plots/line_health_trend_treatment.pdf')
 
 health_trend_c = control.groupby('YEAR', as_index=False).mean()
 health_trend_c['YEAR'].astype(int, inplace=True)
@@ -76,7 +76,7 @@ plt.title('Fraction of Students Passed the Physical Fitness Tests')
 plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 ax.grid(which='minor', alpha=0.2)
 ax.grid(which='major', alpha=0.5)
-ax.figure.savefig('line_health_trend_control.pdf')
+ax.figure.savefig('plots/line_health_trend_control.pdf')
 
 # Restrict samples to schools with data from 2011 to 2015.
 # Robustness test r1.
@@ -116,7 +116,7 @@ plt.title('Fraction of Students Passed the Physical Fitness Tests')
 plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 ax.grid(which='minor', alpha=0.2)
 ax.grid(which='major', alpha=0.5)
-ax.figure.savefig('line_health_trend_treatment_resample.pdf')
+ax.figure.savefig('plots/line_health_trend_treatment_resample.pdf')
 
 control1 = df1[df1['D'] == 0]
 health_trend_c1 = control1.groupby('YEAR', as_index=False).mean()
@@ -128,7 +128,7 @@ plt.title('Fraction of Students Passed the Physical Fitness Tests')
 plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 ax.grid(which='minor', alpha=0.2)
 ax.grid(which='major', alpha=0.5)
-ax.figure.savefig('line_health_trend_control_resample.pdf')
+ax.figure.savefig('plots/line_health_trend_control_resample.pdf')
 
 # regplot.
 for c in controls:
