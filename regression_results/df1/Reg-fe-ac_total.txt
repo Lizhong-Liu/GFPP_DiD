@@ -4,7 +4,7 @@ Dep. Variable:               AC_TOTAL   R-squared:                       0.321
 Model:                            OLS   Adj. R-squared:                  0.320
 Method:                 Least Squares   F-statistic:                     494.0
 Date:                Fri, 01 Dec 2017   Prob (F-statistic):               0.00
-Time:                        16:52:39   Log-Likelihood:                 2954.9
+Time:                        18:00:44   Log-Likelihood:                 2954.9
 No. Observations:                5230   AIC:                            -5898.
 Df Residuals:                    5224   BIC:                            -5858.
 Df Model:                           5                                         
@@ -12,7 +12,7 @@ Covariance Type:            nonrobust
 ================================================================================
                    coef    std err          t      P>|t|      [0.025      0.975]
 --------------------------------------------------------------------------------
-Intercept        0.1217      0.010     12.814      0.000       0.103       0.140
+Intercept        0.1174      0.009     12.957      0.000       0.100       0.135
 D               -0.0132      0.005     -2.783      0.005      -0.023      -0.004
 ENR_TOTAL    -6.908e-06   2.92e-06     -2.364      0.018   -1.26e-05   -1.18e-06
 FEMALE_RATIO     0.3069      0.054      5.659      0.000       0.201       0.413
@@ -22,10 +22,10 @@ FRPM_RATE       -0.3083      0.011    -28.924      0.000      -0.329      -0.287
 Omnibus:                      782.788   Durbin-Watson:                   1.057
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1840.743
 Skew:                          -0.859   Prob(JB):                         0.00
-Kurtosis:                       5.344   Cond. No.                     3.08e+04
+Kurtosis:                       5.344   Cond. No.                     1.98e+04
 ==============================================================================
 
 Warnings:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The condition number is large, 3.08e+04. This might indicate that there are
+[2] The condition number is large, 1.98e+04. This might indicate that there are
 strong multicollinearity or other numerical problems.

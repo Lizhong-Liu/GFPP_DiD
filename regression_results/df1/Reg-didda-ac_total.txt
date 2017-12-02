@@ -2,29 +2,32 @@
 ==============================================================================
 Dep. Variable:               AC_TOTAL   R-squared:                       0.326
 Model:                            OLS   Adj. R-squared:                  0.325
-Method:                 Least Squares   F-statistic:                     420.1
+Method:                 Least Squares   F-statistic:                     361.1
 Date:                Fri, 01 Dec 2017   Prob (F-statistic):               0.00
-Time:                        16:52:39   Log-Likelihood:                 2972.2
-No. Observations:                5230   AIC:                            -5930.
-Df Residuals:                    5223   BIC:                            -5885.
-Df Model:                           6                                         
+Time:                        18:00:44   Log-Likelihood:                 2974.8
+No. Observations:                5230   AIC:                            -5934.
+Df Residuals:                    5222   BIC:                            -5881.
+Df Model:                           7                                         
 Covariance Type:            nonrobust                                         
 ================================================================================
                    coef    std err          t      P>|t|      [0.025      0.975]
 --------------------------------------------------------------------------------
-Intercept        0.6359      0.029     21.607      0.000       0.578       0.694
-I                0.0443      0.010      4.241      0.000       0.024       0.065
-D                0.0020      0.010      0.188      0.851      -0.019       0.023
-D:I             -0.0191      0.012     -1.626      0.104      -0.042       0.004
-FEMALE_RATIO     0.3013      0.054      5.588      0.000       0.196       0.407
-WHITE_RATIO      0.0419      0.014      3.040      0.002       0.015       0.069
-FRPM_RATE       -0.3066      0.011    -28.947      0.000      -0.327      -0.286
+Intercept        0.6390      0.029     21.696      0.000       0.581       0.697
+I                0.0441      0.010      4.225      0.000       0.024       0.065
+D                0.0020      0.010      0.187      0.851      -0.019       0.023
+D:I             -0.0191      0.012     -1.631      0.103      -0.042       0.004
+ENR_TOTAL    -6.549e-06   2.91e-06     -2.248      0.025   -1.23e-05   -8.39e-07
+FEMALE_RATIO     0.3098      0.054      5.733      0.000       0.204       0.416
+WHITE_RATIO      0.0398      0.014      2.889      0.004       0.013       0.067
+FRPM_RATE       -0.3085      0.011    -29.045      0.000      -0.329      -0.288
 ==============================================================================
-Omnibus:                      769.231   Durbin-Watson:                   1.046
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1783.196
-Skew:                          -0.851   Prob(JB):                         0.00
-Kurtosis:                       5.299   Cond. No.                         59.2
+Omnibus:                      795.042   Durbin-Watson:                   1.048
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1866.845
+Skew:                          -0.872   Prob(JB):                         0.00
+Kurtosis:                       5.351   Cond. No.                     3.41e+04
 ==============================================================================
 
 Warnings:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.41e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.

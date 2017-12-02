@@ -11,13 +11,13 @@ sns.set_context('notebook', font_scale=1.45, rc={"lines.linewidth": 3, "figure.f
 con = sqlite3.connect("school_gfpp.sqlite")
 with open("data4_merge.sql") as f: df = pd.read_sql(f.read(), con)
 
-controls = ['FEMALE_RATIO', 'WHITE_RATIO', 'FRPM_RATE']
+controls = ['FEMALE_RATIO', 'WHITE_RATIO', 'FRPM_RATE', 'ENR_TOTAL']
 dependents = ['AC_TOTAL', 'AS_TOTAL', 'BC_TOTAL', 'F_TOTAL', 'TXS_TOTAL', 'UBS_TOTAL', 'HEALTH_TOTAL']
 
 # Treatment group trend.
 treatment = df[df['D'] == 1]
 for y in dependents:
-    formula2 = "{} ~ I + FEMALE_RATIO + WHITE_RATIO + FRPM_RATE".format(y)
+    formula2 = "{} ~ I + ENR_TOTAL + FEMALE_RATIO + WHITE_RATIO + FRPM_RATE".format(y)
     ols = smf.ols(formula=formula2, data=treatment)
     model = ols.fit()
     result = open("regression_results/df/Reg-treatment-{}.txt".format(y.lower()), "w")
@@ -26,7 +26,7 @@ for y in dependents:
 # Control group trend.
 control = df[df['D'] == 0]
 for y in dependents:
-    formula3 = "{} ~ I + FEMALE_RATIO + WHITE_RATIO + FRPM_RATE".format(y)
+    formula3 = "{} ~ I + ENR_TOTAL + FEMALE_RATIO + WHITE_RATIO + FRPM_RATE".format(y)
     ols = smf.ols(formula=formula3, data=control)
     model = ols.fit()
     result = open("regression_results/df/Reg-control-{}.txt".format(y.lower()), "w")
@@ -49,7 +49,7 @@ for c in controls:
 
 # DID analysis.
 for y in dependents:
-    formula3 = "{} ~ I + D + D*I + FEMALE_RATIO + WHITE_RATIO + FRPM_RATE".format(y)
+    formula3 = "{} ~ I + D + D*I + ENR_TOTAL + FEMALE_RATIO + WHITE_RATIO + FRPM_RATE".format(y)
     ols = smf.ols(formula=formula3, data=df)
     model = ols.fit()
     result = open("regression_results/df/Reg-did-{}.txt".format(y.lower()), "w")
@@ -144,7 +144,7 @@ for c in controls:
 
 # DiD analysis.
 for y in dependents:
-    ols = smf.ols(formula="{} ~ I + D + D*I + FEMALE_RATIO + WHITE_RATIO + FRPM_RATE".format(y),
+    ols = smf.ols(formula="{} ~ I + D + D*I + ENR_TOTAL + FEMALE_RATIO + WHITE_RATIO + FRPM_RATE".format(y),
                   data=df1)
     model = ols.fit()
     result = open("regression_results/df1/Reg-didda-{}.txt".format(y.lower()), "w")

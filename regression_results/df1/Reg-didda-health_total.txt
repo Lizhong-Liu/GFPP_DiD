@@ -1,30 +1,33 @@
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:           HEALTH_TOTAL   R-squared:                       0.328
-Model:                            OLS   Adj. R-squared:                  0.327
-Method:                 Least Squares   F-statistic:                     424.1
+Dep. Variable:           HEALTH_TOTAL   R-squared:                       0.351
+Model:                            OLS   Adj. R-squared:                  0.350
+Method:                 Least Squares   F-statistic:                     403.7
 Date:                Fri, 01 Dec 2017   Prob (F-statistic):               0.00
-Time:                        16:52:39   Log-Likelihood:                 5406.5
-No. Observations:                5230   AIC:                        -1.080e+04
-Df Residuals:                    5223   BIC:                        -1.075e+04
-Df Model:                           6                                         
+Time:                        18:00:44   Log-Likelihood:                 5499.6
+No. Observations:                5230   AIC:                        -1.098e+04
+Df Residuals:                    5222   BIC:                        -1.093e+04
+Df Model:                           7                                         
 Covariance Type:            nonrobust                                         
 ================================================================================
                    coef    std err          t      P>|t|      [0.025      0.975]
 --------------------------------------------------------------------------------
-Intercept        0.6553      0.018     35.462      0.000       0.619       0.692
-I                0.0058      0.007      0.885      0.376      -0.007       0.019
-D               -0.0062      0.007     -0.943      0.346      -0.019       0.007
-D:I             -0.0012      0.007     -0.158      0.874      -0.016       0.013
-FEMALE_RATIO     0.3558      0.034     10.510      0.000       0.289       0.422
-WHITE_RATIO      0.0398      0.009      4.606      0.000       0.023       0.057
-FRPM_RATE       -0.1818      0.007    -27.345      0.000      -0.195      -0.169
+Intercept        0.6436      0.018     35.413      0.000       0.608       0.679
+I                0.0065      0.006      1.008      0.313      -0.006       0.019
+D               -0.0062      0.006     -0.953      0.341      -0.019       0.007
+D:I             -0.0010      0.007     -0.137      0.891      -0.015       0.013
+ENR_TOTAL     2.472e-05    1.8e-06     13.751      0.000    2.12e-05    2.82e-05
+FEMALE_RATIO     0.3238      0.033      9.711      0.000       0.258       0.389
+WHITE_RATIO      0.0474      0.009      5.569      0.000       0.031       0.064
+FRPM_RATE       -0.1748      0.007    -26.678      0.000      -0.188      -0.162
 ==============================================================================
-Omnibus:                     1220.282   Durbin-Watson:                   0.827
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):             4397.464
-Skew:                          -1.136   Prob(JB):                         0.00
-Kurtosis:                       6.875   Cond. No.                         59.2
+Omnibus:                     1158.915   Durbin-Watson:                   0.849
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             4217.250
+Skew:                          -1.075   Prob(JB):                         0.00
+Kurtosis:                       6.838   Cond. No.                     3.41e+04
 ==============================================================================
 
 Warnings:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.41e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
