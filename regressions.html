@@ -23,82 +23,7 @@
 <div id="Regressions" class="tabcontent">
 
 
-  <h2>Regression Results</h2>
-
- 
-    <h3>Baseline Analysis</h3>
-    <p>
-      Before running the regression, we would like to compare the treatment group with the control group to make sure that they are comparable
-      in all other dimensions besides getting the treatment (i.e. GFPP) or not. Namely, we compare the means of covariates
-      used in our regressions between the treatment and the control group. In the following, we list the
-      covariates we use, and apply the baseline analysis.
-    </p>
-    <table align="center" style="margin: 0px auto;"
-      <caption>Table 1. List of covariates</caption>
-      <tr><td>School Size</td> <td>Total Enrollment</td></tr>
-      <tr><td>Poverty Ratio</td> <td>Fraction of students enrolled in Free and Reduced Price Meals Program</td></tr>
-      <tr><td>Female Ratio</td> <td>Fraction of female students</td></tr>
-      <tr><td>White Ratio</td> <td>Fraction of white students</td></tr>
-    </table>
- </br>
-    <table align="center" style="margin: 0px auto;">
-     <caption>Table 2. Treatment vs Control on baseline variables</caption> 
-     <tr><th colspan="5"></th></tr>
-      <tr><td></td>               <td colspan="2">2001-2015</td>         <td colspan="2">2011-2015</td></tr>
-      <tr><td>ENR_TOTAL</td>      <td>882.47</td>    <td>942.30</td>     <td>865.85</td>    <td>876.84</td></tr>
-      <tr><td>FEMALE_COUNT</td>   <td>425.06</td>    <td>460.57</td>     <td>422.26</td>    <td>427.97</td></tr>
-      <tr><td>FEMALE_RATIO</td>   <td>0.48</td>      <td>0.49</td>       <td>0.49</td>      <td>0.49</td></tr>
-      <tr><td>WHITE_COUNT</td>    <td>180.83</td>    <td>146.61</td>     <td>172.90</td>    <td>189.98</td></tr>
-      <tr><td>WHITE_RATIO</td>    <td>0.19</td>      <td>0.17</td>       <td>0.18</td>      <td>0.23</td></tr>
-      <tr><td>FRPM_COUNT</td>     <td>515.75</td>    <td>586.66</td>     <td>521.44</td>    <td>462.53</td></tr>
-      <tr><td>FRPM_RATE</td>      <td>0.62</td>      <td>0.62</td>       <td>0.64</td>      <td>0.54</td></tr>
-    </table>
-</br>
-      <table class='image'>
-       <caption>Table 3. </caption>
-          <th>
-            <td>Baseline Variables</td>
-            <td>Control</td>
-            <td>Treatment</td>
-        </th>
-        <tr>
-           <td>School Size</td>
-           <td>
-             <img src="plots/ENR_TOTAL-control.png" alt='line plot of health result from 2001 to 2015' ></img>
-          </td>
-           <td>
-             <img src="plots/ENR_TOTAL-treatment.png" alt='line plot of health result from 2001 to 2015' ></img>
-          </td>
-       </tr>
-       <tr>
-          <td>Female ratio</td>
-          <td>
-             <img src="plots/FEMALE_RATIO-control.png" alt='line plot of health result from 2001 to 2015' ></img>
-          </td>
-          <td>
-             <img src="plots/FEMALE_RATIO-treatment.png" alt='line plot of health result from 2001 to 2015' ></img>
-        </td>
-       </tr>
-       <tr>
-          <td>Poverty ratio</td>
-          <td>
-             <img src="plots/FRPM_RATE-control.png" alt='line plot of health result from 2001 to 2015' ></img>
-          </td>
-          <td>
-             <img src="plots/FRPM_RATE-treatment.png" alt='line plot of health result from 2001 to 2015' ></img>
-        </td>
-       </tr>
-              <tr>
-          <td>White ratio</td>
-          <td>
-             <img src="plots/WHITE_RATIO-control.png" alt='line plot of health result from 2001 to 2015' ></img>
-          </td>
-          <td>
-             <img src="plots/WHITE_RATIO-treatment.png" alt='line plot of health result from 2001 to 2015' ></img>
-        </td>
-       </tr>
-    </table>
-    </p>
+ <h2>Regression Results</h2>
  
     <h3>Dependent Variable</h3>
     <p>
@@ -171,6 +96,80 @@
         realigning physical test scores, we choose to drop historic data until year 2010.
         In the second column of Table 3 is the trend of fitness test score from year 2011 to 2015.
        </p>
+
+ <h3>Baseline Analysis</h3>
+    <p>
+      Before running the regression, we would like to compare the treatment group with the control group to make sure that they are comparable
+      in all other dimensions besides getting the treatment (i.e. GFPP) or not. Namely, we compare the means of covariates
+      used in our regressions between the treatment and the control group. In the following, we list the
+      covariates we use, and apply the baseline analysis.
+    </p>
+    <table align="center" style="margin: 0px auto;"
+      <caption>Table 1. List of covariates</caption>
+      <tr><td>School Size</td> <td>Total Enrollment</td></tr>
+      <tr><td>Poverty Ratio</td> <td>Fraction of students enrolled in Free and Reduced Price Meals Program</td></tr>
+      <tr><td>Female Ratio</td> <td>Fraction of female students</td></tr>
+      <tr><td>White Ratio</td> <td>Fraction of white students</td></tr>
+    </table>
+ </br>
+    <table align="center" style="margin: 0px auto;">
+     <caption>Table 2. Treatment vs Control on baseline variables</caption> 
+     <tr><th colspan="5"></th></tr>
+      <tr><td></td>               <td colspan="2">2001-2015</td>         <td colspan="2">2011-2015</td></tr>
+      <tr><td>ENR_TOTAL</td>      <td>882.47</td>    <td>942.30</td>     <td>865.85</td>    <td>876.84</td></tr>
+      <tr><td>FEMALE_COUNT</td>   <td>425.06</td>    <td>460.57</td>     <td>422.26</td>    <td>427.97</td></tr>
+      <tr><td>FEMALE_RATIO</td>   <td>0.48</td>      <td>0.49</td>       <td>0.49</td>      <td>0.49</td></tr>
+      <tr><td>WHITE_COUNT</td>    <td>180.83</td>    <td>146.61</td>     <td>172.90</td>    <td>189.98</td></tr>
+      <tr><td>WHITE_RATIO</td>    <td>0.19</td>      <td>0.17</td>       <td>0.18</td>      <td>0.23</td></tr>
+      <tr><td>FRPM_COUNT</td>     <td>515.75</td>    <td>586.66</td>     <td>521.44</td>    <td>462.53</td></tr>
+      <tr><td>FRPM_RATE</td>      <td>0.62</td>      <td>0.62</td>       <td>0.64</td>      <td>0.54</td></tr>
+    </table>
+</br>
+      <table class='image'>
+       <caption>Table 3. </caption>
+          <th>
+            <td>Baseline Variables</td>
+            <td>Control</td>
+            <td>Treatment</td>
+        </th>
+        <tr>
+           <td>School Size</td>
+           <td>
+             <img src="plots/ENR_TOTAL-control.png" alt='line plot of health result from 2001 to 2015' ></img>
+          </td>
+           <td>
+             <img src="plots/ENR_TOTAL-treatment.png" alt='line plot of health result from 2001 to 2015' ></img>
+          </td>
+       </tr>
+       <tr>
+          <td>Female ratio</td>
+          <td>
+             <img src="plots/FEMALE_RATIO-control.png" alt='line plot of health result from 2001 to 2015' ></img>
+          </td>
+          <td>
+             <img src="plots/FEMALE_RATIO-treatment.png" alt='line plot of health result from 2001 to 2015' ></img>
+        </td>
+       </tr>
+       <tr>
+          <td>Poverty ratio</td>
+          <td>
+             <img src="plots/FRPM_RATE-control.png" alt='line plot of health result from 2001 to 2015' ></img>
+          </td>
+          <td>
+             <img src="plots/FRPM_RATE-treatment.png" alt='line plot of health result from 2001 to 2015' ></img>
+        </td>
+       </tr>
+              <tr>
+          <td>White ratio</td>
+          <td>
+             <img src="plots/WHITE_RATIO-control.png" alt='line plot of health result from 2001 to 2015' ></img>
+          </td>
+          <td>
+             <img src="plots/WHITE_RATIO-treatment.png" alt='line plot of health result from 2001 to 2015' ></img>
+        </td>
+       </tr>
+    </table>
+    </p>
 
     <h3>Difference in Difference Methodology</h3>
     <p>Given that change in body composition, as well as in a school's
