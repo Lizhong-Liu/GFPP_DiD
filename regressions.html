@@ -38,16 +38,16 @@
     </p>
     <p>
       The adoption of GFPP by the LA Unified School Districts provides us with a chance to
-      study GFPP's impact on studnets' phsical fitness.
-      Among all the 6 stduent fitness areas (table 1) monitored by California state,
+      study GFPP's impact on students' phsical fitness.
+      Among all the 6 student fitness areas (table 1) monitored by California state,
       we are most interested in students' finess change in Body Composition.
       This is because better food quality and a more balanced diet brought by
       GFPP do not necessarily tranaslate to improved body functions
       such as higher adrobic capacity, or improved athletic abilities such as
       stronger abdominal and back muscel.
       However, we believe students' body composition, such as fat percentadge
-      expressed in skinfold measurement or BMI (Body Mass Index), do responde and
-      responde faster to a diet improvement. Therefore, we expect to see a higher
+      expressed in skinfold measurement or BMI (Body Mass Index), do respond and
+      respond faster to a diet improvement. Therefore, we expect to see a higher
       fraction of students meeting the healthy body composition standand a few years
       after the policy was implemented.</p>
       <table align="center" style="margin: 0px auto;">
@@ -61,8 +61,8 @@
        <tr class="source"><td>Source: <a href>https://www.cde.ca.gov/ta/tg/pf/</a></td></tr>
       </table>
 
-      <p> Pysical Fitness Test (PFT) is conducted in every LA school yearly on grade 5,7 and 9,
-        giveing us a good panel data of students' fitness test result. However, complexity lies in
+      <p> Pysical Fitness Test (PFT) is conducted in every LA school annually on grade 5,7 and 9,
+        giveing us a good panal data of students' fitness test result. However, complexity lies in
         that <a href= 'https://www.cde.ca.gov/ta/tg/pf/healthfitzones.asp'>test standards</a> were adjusted
         in year 2006 and 2011. We plotted the testing result to double check whether the change
         of test standards has caused significant disruptance in testing score. </p>
@@ -106,7 +106,8 @@
       <tr><td>Female Ratio</td> <td>Fraction of female students</td></tr>
       <tr><td>White Ratio</td> <td>Fraction of white students</td></tr>
     </table>
- </br>
+    By running regressions of our PFT healthy fraction againt treatment status, we found that our treatment status are biased
+    across all the baseline variables. The pics below gives helps you to visualize the problem we are facing.
     <table align="center" style="margin: 0px auto;">
      <caption>Table 2. Treatment vs Control on baseline variables</caption>
      <tr><th colspan="5"></th></tr>
@@ -121,7 +122,7 @@
     </table>
 </br>
       <table class='image'>
-       <caption>Table 3. </caption>
+       <caption>Table 3. PFT performanc against baseline vairables</caption>
           <th>
             <td>Baseline Variables</td>
             <td>Control</td>
@@ -186,13 +187,25 @@
       the change in treatment group with the change in control group to get a clean
       effect of GFPP on physically-healthy student fraction.
     </p>
+<<<<<<< HEAD
 
+=======
+    <p> Our DiD coefficients are listed in the first two columns of Table 5. The first column is when we use
+        all the data from 2004 to 2015, while the second column is when we use the resampled data from 2011 to 2015.
+        The numbers are not as we expected and are suggesting that the GFPP does not improve students' fitness in 5 out of
+        the 6 major fitness areas. The numbers does show a minor but significant Abdominal Strength improvement in
+        schools that have adopted GFPP. However, we cannot find a logical explanation for this finding.
+    </p>
+
+
+>>>>>>> 3a37271a9a2f77affeede130b6193524f936fef1
       <h3>Robust test: Fixed effect</h3>
     <p> Besides the coraviates we have controlled for,
       school may have other indiviaully-invariant attributes that we haven't accounted for.
       For example, schools have different sports facilities, differnet locations that
       provide access to different environments. These may also influence students
-      physical fitness level.
+      physical fitness level. Therefore, we applied fixed effect method to our DiD model. The result is listed
+      in the third column of Table5. We found the coeffients we found in our DiD model within resampled data are robust.
       <table>
         <caption>Table 5. Coefficient of DiD</caption>
       <th><td>2001-2015</td>     <td>2011-2015</td>        <td>Fixed Effect</td> </th>
@@ -208,14 +221,24 @@
       <tr><td></td>           <td>0.007</td>         <td>0.014</td>          <td>0.013</td></tr>
       <tr><td>TXS</td>        <td>-0.0025</td>       <td>0.0035</td>         <td>0.0036</td></tr>
       <tr><td></td>           <td>0.006</td>         <td>0.012</td>          <td>0.012</td></tr>
+      <tr><td>HEALTH</td>     <td>-0.0156</td>       <td>-0.0012</td>         <td>-0.0010</td></tr>
+      <tr><td></td>           <td>0.004</td>         <td>0.007</td>          <td>0.007</td></tr>
     </table>
     </p>
 
 
     <h3>CAVEATS</h3>
-    <p> To check the specification of our model, we plot the residuals against our baseline variables.
-     </p>
-
+     <ol>
+  <li>The control and treatment group are not randomly constructed so we have a huge selection bias. We tried different
+   ways to eliminate the bias but they are with little success. We should control more baseline variables, such as
+      school funding etc.</li>
+  <li>The observations we have are limited both before and after the policy was implemented. To get more observations,
+      we can try to extend our observations to 2004, it means we'll have to adjust the PFT score
+      in the past rescords and align them with our current PFT standands. We should also use more after data,
+      which means we need have to wait until the GFPP fully exercise its impact on our dependent variables.</li>
+  <li>The FRPM ratio is not a good proxy for school's poverty student ratio because the lunch program already covers more than
+      half of the total students. We should try to find a more accurate measure for school's poverty level. </li>
+    </ol>
 
 <div class="backimage">
   <p><i>Background image source: "http://www.hotel-r.net/im/hotel/es/la-city-1.jpg"</i></p>
