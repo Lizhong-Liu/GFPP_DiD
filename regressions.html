@@ -191,13 +191,21 @@
       the change in treatment group with the change in control group to get a clean
       effect of GFPP on physically-healthy student fraction.
     </p>
+    <p> Our DiD coefficients are listed in the first two columns of Table 5. The first column is when we use 
+        all the data from 2004 to 2015, while the second column is when we use the resampled data from 2011 to 2015.
+        The numbers are not as we expected and are suggesting that the GFPP does not improve students' fitness in 5 out of 
+        the 6 major fitness areas. The numbers does show a minor but significant Abdominal Strength improvement in 
+        schools that have adopted GFPP. However, we cannot find a logical explanation for this finding.
+    </p>
+     
  
       <h3>Robust test: Fixed effect</h3>
     <p> Besides the coraviates we have controlled for,
       school may have other indiviaully-invariant attributes that we haven't accounted for.
       For example, schools have different sports facilities, differnet locations that
       provide access to different environments. These may also influence students
-      physical fitness level.
+      physical fitness level. Therefore, we applied fixed effect method to our DiD model. The result is listed
+      in the third column of Table5. We found the coeffients we found in our DiD model within resampled data are robust.
       <table>
         <caption>Table 5. Coefficient of DiD</caption>
       <th><td>2001-2015</td>     <td>2011-2015</td>        <td>Fixed Effect</td> </th>
@@ -213,24 +221,24 @@
       <tr><td></td>           <td>0.007</td>         <td>0.014</td>          <td>0.013</td></tr>
       <tr><td>TXS</td>        <td>-0.0025</td>       <td>0.0035</td>         <td>0.0036</td></tr>
       <tr><td></td>           <td>0.006</td>         <td>0.012</td>          <td>0.012</td></tr>
+      <tr><td>HEALTH</td>     <td>-0.0156</td>       <td>-0.0012</td>         <td>-0.0010</td></tr>
+      <tr><td></td>           <td>0.004</td>         <td>0.007</td>          <td>0.007</td></tr>
     </table>
     </p>
 
 
     <h3>CAVEATS</h3>
-    <p> To check the specification of our model, we plot the residuals against our baseline variables.
-     <table>
-        <caption>Table 6. Residuals agains baseline variables</caption>
-      <tr><td></td>           <td></td></tr>
-      <tr><td></td>           <td></td></tr>
-      <tr><td></td>           <td></td></tr>
-      <tr><td></td>           <td></td></tr>
-      <tr><td></td>           <td></td></tr>
-      <tr><td></td>           <td></td></tr>
-    </table>
-     
-     </p>
-
+     <ol>
+  <li>The control and treatment group are not randomly constructed so we have a huge selection bias. We tried different 
+   ways to eliminate the bias but they are with little success. We should control more baseline variables, such as 
+      school funding etc.</li>
+  <li>The observations we have are limited both before and after the policy was implemented. To get more observations,
+      we can try to extend our observations to 2004, it means we'll have to adjust the PFT score 
+      in the past rescords and align them with our current PFT standands. We should also use more after data, 
+      which means we need have to wait until the GFPP fully exercise its impact on our dependent variables.</li>
+  <li>The FRPM ratio is not a good proxy for school's poverty student ratio because the lunch program already covers more than 
+      half of the total students. We should try to find a more accurate measure for school's poverty level. </li>
+    </ol>
 
 <div class="backimage">
   <p><i>Background image source: "http://www.hotel-r.net/im/hotel/es/la-city-1.jpg"</i></p>
