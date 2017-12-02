@@ -93,6 +93,7 @@ h3{
 /* Style the font size*/
 p {
   font size: 90%;
+  margin: auto;
 }
 
 p.line {
