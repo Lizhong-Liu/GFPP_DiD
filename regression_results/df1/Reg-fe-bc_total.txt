@@ -4,7 +4,7 @@ Dep. Variable:               BC_TOTAL   R-squared:                       0.451
 Model:                            OLS   Adj. R-squared:                  0.450
 Method:                 Least Squares   F-statistic:                     858.2
 Date:                Fri, 01 Dec 2017   Prob (F-statistic):               0.00
-Time:                        18:00:44   Log-Likelihood:                 5081.4
+Time:                        18:32:02   Log-Likelihood:                 5081.4
 No. Observations:                5230   AIC:                        -1.015e+04
 Df Residuals:                    5224   BIC:                        -1.011e+04
 Df Model:                           5                                         

@@ -4,7 +4,7 @@ Dep. Variable:                F_TOTAL   R-squared:                       0.090
 Model:                            OLS   Adj. R-squared:                  0.089
 Method:                 Least Squares   F-statistic:                     57.51
 Date:                Fri, 01 Dec 2017   Prob (F-statistic):           3.37e-57
-Time:                        18:00:41   Log-Likelihood:                 1374.8
+Time:                        18:31:58   Log-Likelihood:                 1374.8
 No. Observations:                2903   AIC:                            -2738.
 Df Residuals:                    2897   BIC:                            -2702.
 Df Model:                           5                                         

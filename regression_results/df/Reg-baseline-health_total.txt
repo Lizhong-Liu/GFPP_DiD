@@ -4,7 +4,7 @@ Dep. Variable:              ENR_TOTAL   R-squared:                       0.001
 Model:                            OLS   Adj. R-squared:                  0.001
 Method:                 Least Squares   F-statistic:                     10.45
 Date:                Fri, 01 Dec 2017   Prob (F-statistic):            0.00123
-Time:                        18:00:41   Log-Likelihood:                -97598.
+Time:                        18:31:58   Log-Likelihood:                -97598.
 No. Observations:               12135   AIC:                         1.952e+05
 Df Residuals:                   12133   BIC:                         1.952e+05
 Df Model:                           1                                         

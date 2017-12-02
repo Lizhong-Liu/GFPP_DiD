@@ -4,7 +4,7 @@ Dep. Variable:           HEALTH_TOTAL   R-squared:                       0.214
 Model:                            OLS   Adj. R-squared:                  0.213
 Method:                 Least Squares   F-statistic:                     157.9
 Date:                Fri, 01 Dec 2017   Prob (F-statistic):          9.85e-149
-Time:                        18:00:41   Log-Likelihood:                 2934.3
+Time:                        18:31:58   Log-Likelihood:                 2934.3
 No. Observations:                2903   AIC:                            -5857.
 Df Residuals:                    2897   BIC:                            -5821.
 Df Model:                           5                                         
