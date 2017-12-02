@@ -94,6 +94,7 @@ table.image {
 
 img {
   float: center;
+  align: center;
   width: 100%;
   height: 100%;
 }
