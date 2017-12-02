@@ -166,3 +166,7 @@ div.backimage {
   color:grey;
 }
 
+/* Style the table image*/
+table.image {
+  text-align: center;
+}
