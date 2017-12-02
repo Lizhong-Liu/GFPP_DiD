@@ -162,6 +162,7 @@ p.footer {
 
 /* Style background image source*/
 p.backgroundimage {
-  font-size: 12px;
+  font-size: 10px;
+  color:grey;
 }
 
