@@ -161,7 +161,7 @@ for i in range(len(c_means)):
     fe.loc[:, controls[i]] = fe['{}'.format(controls[i])] - c_means[i]
 
 for y in dependents:
-    ols = smf.ols(formula="{} ~ D + ENR_TOTAL + FEMALE_RATIO + WHITE_RATIO + FRPM_RATE".format(y), data=fe)
+    ols = smf.ols(formula="{} ~ D + I + D*I + ENR_TOTAL + FEMALE_RATIO + WHITE_RATIO + FRPM_RATE".format(y), data=fe)
     model = ols.fit()
     result = open("regression_results/df1/Reg-fe-{}.txt".format(y.lower()), "w")
     result.write(model.summary().as_text())
