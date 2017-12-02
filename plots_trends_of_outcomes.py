@@ -20,5 +20,5 @@ for x in dependents:
     ax.set(xlabel = 'Year',
            ylabel = "Fraction",
            title = 'Fraction of students meeting healthy {} standards'.format(x.split('_')[0]))
-    ax.figure.savefig("plots/violin_{}.pdf".format(x), bbox_inches='tight', pad_inches=0.05)
+    ax.figure.savefig("plots/violin_{}.png".format(x), bbox_inches='tight', pad_inches=0.05)
     plt.clf()
