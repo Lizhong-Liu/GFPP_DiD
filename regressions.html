@@ -22,7 +22,7 @@
 
 <div id="Regressions" class="tabcontent">
 
-  
+
   <h2>Regression Results</h2>
 
     <h3>Dependent Variable</h3>
@@ -60,19 +60,38 @@
        <tr><td>Flexibility</td>                           <td>(F)</td></tr>
        <tr class="source"><td>Source: <a href>https://www.cde.ca.gov/ta/tg/pf/</a></td></tr>
       </table>
-      
+
       <p> Pysical Fitness Test (PFT) is conducted in every LA school yearly on grade 5,7 and 9,
         giveing us a good panal data of students' fitness test result. However, complexity lies in
         that <a href= 'https://www.cde.ca.gov/ta/tg/pf/healthfitzones.asp'>test standards</a> were adjusted
         in year 2006 and 2011. We plotted the testing result to double check whether the change
-        of test standards has caused significant disruptance on testing score. </p>
-        <embed src="plots/line_health_trend_control.pdf" alt='line plot of health result from 2001 to 2015' width="500" height="300">
-        <embed src="plots/line_health_trend_treatment.pdf" alt='line plot of health result from 2001 to 2015' width="500" height="300">
-        <embed src="plots/line_health_trend_treatment_resample.pdf" alt='line plot of health result from 2001 to 2015' width="500" height="300">
-        <embed src="plots/line_health_trend_control_resample.pdf" alt='line plot of health result from 2001 to 2015' width="500" height="300">
+        of test standards has caused significant disruptance in testing score. </p>
+        <table class='image'>
+          <th>
+            <td>Before resampling</td>
+            <td>After resampling</td>
+        </th>
+        <tr>
+           <td>
+             <img src="plots/line_health_trend_control.png" alt='line plot of health result from 2001 to 2015' ></img>
+          </td>
+           <td>
+             <img src="plots/line_health_trend_control_resample.png" alt='line plot of health result from 2001 to 2015' ></img>
+          </td>
+       </tr>
+       <tr>
+          <td>
+             <img src="plots/line_health_trend_treatment.png" alt='line plot of health result from 2001 to 2015' ></img>
+          </td>
+          <td>
+             <img src="plots/line_health_trend_treatment_resample.png" alt='line plot of health result from 2001 to 2015' ></img>
+        </td>
+       </tr>
+    </table>
       <p>As seen from the plots above, the test standards change in 2011 does cause
-        a plunge in the testing result of come fitness measurement. Due to lack of expertise in
+        some fitness measurement to plunge. Due to lack of expertise in
         realigning physical test scores, we choose to drop historic data until year 2010.
+        In the second column of Table 3 is the trend of fitness test score from year 2011 to 2015.
        </p>
 
     <h3>Difference in Difference Methodology</h3>
@@ -95,21 +114,14 @@
       the change in treatment group with the change in control group to get a clean
       effect of GFPP on physically-healthy student fraction.
     </p>
- 
+
     <h3>Baseline Analysis</h3>
     <p>
-      Before running the regression, we would like to compare the two groups so as to make sure that they are comparable
+      Before running the regression, we would like to compare the treatment group with the controll group to make sure that they are comparable
       in all other dimensions besides getting the treatment (i.e. GFPP) or not. Namely, we compare the means of covariates
       used in our regressions between the treatment and the control group. In the following, we list the
       covariates we use, and apply the baseline analysis.
-    <h3>Control for Covariates</h3>
-    <p> We are aware that socioeconomic attributes of school influence
-      the number of physically-healthy students in the school. Especially, our
-      control and treatment group might not be randomly constructed and that
-      they are not comparable across sosioeconomic attibutes such as schools' size,
-      poverty level, ethnicity diversity, and gender diversity. That being considered,
-      we performed a balance test between treatment group and control group from
-      the following four dimentions.
+    </p>
     <table align="center" style="margin: 0px auto;"
       <tr><th>Table 2. List of covariates</th></tr>
       <tr><td>Number of enrollment</td></tr>
@@ -131,11 +143,27 @@
     </table>
     </p>
       <h3>Robust test: Fixed effect</h3>
-    <p> We are also aware that besides the coraviates we have controlled for,
+    <p> Besides the coraviates we have controlled for,
       school may have other indiviaully-invariant attributes that we haven't accounted for.
       For example, schools have different sports facilities, differnet locations that
       provide access to different environments. These may also influence students
       physical fitness level.
+      <table>
+        <caption>Coefficient of DiD</caption>
+      <th><td>2001-2015</td>     <td>2011-2015</td>        <td>Fixed Effect</td> </th>
+      <tr><td>AC</td>         <td>-0.0465</td>       <td>-0.0191</td>        <td>-0.0191</td></tr>
+      <tr><td></td>           <td>0.008</td>         <td>0.012</td>          <td>0.012</td></tr>
+      <tr><td>AS</td>         <td>2.847e-06</td>     <td>0.0066</td>         <td>0.0068</td></tr>
+      <tr><td></td>           <td>0.007</td>         <td>0.013</td>          <td>0.013</td></tr>
+      <tr><td>BC</td>         <td>-0.0051</td>       <td>0.0106</td>         <td>0.0108</td></tr>
+      <tr><td></td>           <td>0.004</td>         <td>0.008</td>          <td>0.008</td></tr>
+      <tr><td>F</td>          <td>-0.0101</td>       <td>-0.0062</td>        <td>-0.0059</td></tr>
+      <tr><td></td>           <td>0.006</td>         <td>0.012</td>          <td>0.012</td></tr>
+      <tr><td>UBS</td>        <td>-0.0295</td>       <td>-0.0024</td>        <td>-0.0022</td></tr>
+      <tr><td></td>           <td>0.007</td>         <td>0.014</td>          <td>0.013</td></tr>
+      <tr><td>TXS</td>        <td>-0.0025</td>       <td>0.0035</td>         <td>0.0036</td></tr>
+      <tr><td></td>           <td>0.006</td>         <td>0.012</td>          <td>0.012</td></tr>
+    </table>
     </p>
 
 
@@ -145,7 +173,6 @@
   <b></b>
 
     <h3>CAVEATS</h3>
-      <p></p>
 
 
 <div class="backimage">
@@ -157,7 +184,7 @@
 
 <div class="footer">
       <p class="footer">© IPPP 2017 <span title="0.24376s from unicorn-4283300578-673d7">by Lizhong Liu, Yiran Hao, Manyi Wang</span><br/>
-      All Rights Reserved.</p>   
+      All Rights Reserved.</p>
 </div>
 
 </html>
