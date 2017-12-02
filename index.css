@@ -161,8 +161,8 @@ p.footer {
 }
 
 /* Style background image source*/
-p.backgroundimage {
-  font-size: 10px;
+div.backimage {
+  font-size: 12px;
   color:grey;
 }
 
