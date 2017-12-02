@@ -89,7 +89,7 @@ img {
     float: right;
     border: 10px;
     border-style: solid;
-    border-color: white;
+    border-color: whitesmoke;
 }
 
 /* Style the table */
@@ -102,12 +102,16 @@ table {
   border-spacing: 0px;
   margin: 10px 30px;
   font-size: 16px;
+  margin: auto;
 }
 
 /* Style the video */
 iframe {
   margin: auto;
-  text-align: center;
+}
+p.video {
+  text-align:center;
+  margin:auto;
 }
 
 /* Style the box text*/
@@ -151,3 +155,8 @@ div.footer{
   opacity:0.9; 
   background:whitesmoke;
 }
+
+p.footer {
+  font-size: 12px;
+}
+
