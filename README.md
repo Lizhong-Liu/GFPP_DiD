@@ -40,7 +40,7 @@ Besides regressional analysis, we also want to examine the potential influence o
 We divide the project into two parts: regression analysis and ACS analysis. For the first part - regression analysis, all codes can be found in this repository (named as "data_something.py" or "plot_something.py"). We do the following to get the regression results:
 - Data cleaning: 
   - Data from CDE are recorded annually in .csv files or .xls files. Thus, we clean each variable up by year and concat them on CDS code (the identification code for each school). You can find three files recording the codes of data cleaning:
-    - School enrollment and demographics: data1_enrollment.py
+    - School enrollment and demographics: [data1_enrollment.py](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/data1_enrollment.py)
     - School-level physical fitness test results: data2_pft.py
     - School-level poverty data (we use school-level enrollment rate of the [Free and Reduced Price Meals Program](https://www.fns.usda.gov/school-meals/applying-free-and-reduced-price-school-meals) as a proxy: data3_frpm.py
   - With the codes above, we create three .csv files storing these variables. We also use these .csv files to create a sqlite database which is available to the public for future reference. All these data files are saved in the folder - "data":
