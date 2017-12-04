@@ -165,3 +165,11 @@ for y in dependents:
     model = ols.fit()
     result = open("regression_results/df1/Reg-fe-{}.txt".format(y.lower()), "w")
     result.write(model.summary().as_text())
+
+# Robustness test 3: fixed effect model.
+for y in dependents:
+    ols = smf.ols(formula="{} ~ I + D + D*I + C(CDS_CODE) + ENR_TOTAL + FEMALE_RATIO + WHITE_RATIO + FRPM_RATE".format(y),
+                  data=df1)
+    model = ols.fit()
+    result = open("regression_results/df1/Reg-fe2-{}.txt".format(y.lower()), "w")
+    result.write(model.summary().as_text())
