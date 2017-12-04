@@ -42,7 +42,7 @@ ul.nav li a.active {
   font-weight: bold;
 }
 
-ul.nav li:hover { 
+ul.nav li:hover {
   background-color: #555;
   transition: 0s;
 }
@@ -83,7 +83,7 @@ div.tabcontent {
 }
 
 /* Style the image */
-img {
+img.main {
     margin: 20px 20px;
     width: 30%;
     float: right;
@@ -152,7 +152,7 @@ div.footer{
   color:grey;
   font-size: 12px;
   text-align:center;
-  opacity:0.9; 
+  opacity:0.9;
   background:whitesmoke;
 }
 
@@ -167,6 +167,7 @@ div.backimage {
 }
 
 /* Style the table image*/
-table.image {
-  text-align: center;
+table.image img {
+  float: center;
+  margin: auto;
 }
