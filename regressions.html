@@ -52,7 +52,7 @@
       after the policy was implemented.</p>
 
       <table align="center" style="margin: 20px auto;">
-       <caption>Table 1. Dependent variables</caption>
+       <caption><b>Table 1. Dependent variables</b></caption>
        <tr><th>Fitness Areas</th></tr>
        <tr><td>Aerobic Capacity</td>                      <td>(AC)</td></tr>
        <tr><td>Abdominal Strength & Endurance</td>        <td>(AS)</td></tr>
@@ -71,17 +71,18 @@
 
       <p>
       <table class="image" align="center" cellspacing="0" cellpadding="0">
+        <caption><b>Plots. Trends of Physical Fitness</b></caption>
         <tr>
-          <td>Plots 1. Trends of PFT in control group of the entire sample</td>
-          <td>Plots 2. Trends of PFT in treatment group of the entire sample</td>
+          <td><b>Plots 1. Trends of PFT in control group of the entire sample</b></td>
+          <td><b>Plots 2. Trends of PFT in treatment group of the entire sample</b></td>
         </tr>
         <tr>
           <td align="center"><img style="align:center" src="plots/line_health_trend_control.png" alt="hcb" width="450"></td>
           <td align="center"><img style="float:center" src="plots/line_health_trend_treatment.png" alt="hcb" width="450"></td>
         </tr>
        <tr>
-          <td>Plots 3. Trends of PFT in control group of the resampled data</td>
-          <td>Plots 4. Trends of PFT in treatment group of the resampled data</td>
+          <td><b>Plots 3. Trends of PFT in control group of the resampled data</b></td>
+          <td><b>Plots 4. Trends of PFT in treatment group of the resampled data</b></td>
        </tr>
        <tr>
           <td align="center"><img style="float:center" src="plots/line_health_trend_control_resample.png" alt="hca" width="450"></img></td>
@@ -104,7 +105,7 @@
       covariates we use, and apply the baseline analysis.
     </p>
     <table align="center" style="margin: 0px auto;">
-      <caption>Table 2. List of covariates</caption>
+      <caption><b>Table 2. List of covariates</b></caption>
       <tr><td>School Size</td> <td>Total Enrollment</td></tr>
       <tr><td>Poverty Ratio</td> <td>Fraction of students enrolled in Free and Reduced Price Meals Program</td></tr>
       <tr><td>Female Ratio</td> <td>Fraction of female students</td></tr>
@@ -114,7 +115,7 @@
     across all the baseline variables. The pictures below gives helps you to visualize the problem we are facing.</P>
     <p>
     <table align="center" style="margin: 0px auto;">
-     <caption>Table 3. Treatment vs Control on baseline variables</caption>
+     <caption><b>Table 3. Treatment vs Control on baseline variables</b></caption>
       <tr><th></th>               <th colspan="2">Sample1: 2001-2015</th>         <th colspan="2">Sample2: 2011-2015</th></tr>
       <tr><td>Total enrollment</td>      <td>882.47</td>    <td>942.30</td>     <td>865.85</td>    <td>876.84</td></tr>
       <tr><td>Female students</td>   <td>425.06</td>    <td>460.57</td>     <td>422.26</td>    <td>427.97</td></tr>
@@ -125,9 +126,9 @@
       <tr><td>FRPM enrollment rate</td>      <td>0.62</td>      <td>0.62</td>       <td>0.64</td>      <td>0.54</td></tr>
     </table>
 </P>
-</br>
-      <table class='image' align="center">
-       <caption>Plots. PFT performance against baseline vairables</caption>
+
+    <table class='image' align="center">
+       <caption><b>Plots. PFT performance against baseline vairables</b></caption>
           <tr>
             <th style='width: 10%'>Baseline Variables</th>
             <th style='width: 45%'>Control</th>
@@ -136,41 +137,40 @@
         <tr>
            <td>School Size</td>
            <td align="center">
-             <img src="plots/ENR_TOTAL-control.png" alt='line plot of health result from 2001 to 2015' ></img>
+             <img src="plots/ENR_TOTAL-control.png" alt='line plot of health result from 2001 to 2015' width="90%"></img>
           </td>
            <td align="center">
-             <img style="float:center" src="plots/ENR_TOTAL-treatment.png" alt='line plot of health result from 2001 to 2015' ></img>
+             <img style="float:center" src="plots/ENR_TOTAL-treatment.png" alt='line plot of health result from 2001 to 2015' width="90%"></img>
           </td>
        </tr>
        <tr>
           <td>Female ratio</td>
           <td align="center">
-             <img style="float:center" src="plots/FEMALE_RATIO-control.png" alt='line plot of health result from 2001 to 2015' ></img>
+             <img style="float:center" src="plots/FEMALE_RATIO-control.png" alt='line plot of health result from 2001 to 2015' width="90%"></img>
           </td>
           <td align="center">
-             <img style="float:center" src="plots/FEMALE_RATIO-treatment.png" alt='line plot of health result from 2001 to 2015' ></img>
+             <img style="float:center" src="plots/FEMALE_RATIO-treatment.png" alt='line plot of health result from 2001 to 2015' width="90%"></img>
         </td>
        </tr>
        <tr>
           <td>Poverty ratio</td>
           <td align="center">
-             <img style="float:center" src="plots/FRPM_RATE-control.png" alt='line plot of health result from 2001 to 2015' ></img>
+             <img style="float:center" src="plots/FRPM_RATE-control.png" alt='line plot of health result from 2001 to 2015' width="90%"></img>
           </td>
           <td align="center">
-             <img style="float:center" src="plots/FRPM_RATE-treatment.png" alt='line plot of health result from 2001 to 2015' ></img>
+             <img style="float:center" src="plots/FRPM_RATE-treatment.png" alt='line plot of health result from 2001 to 2015' width="90%"></img>
         </td>
        </tr>
-              <tr>
+       <tr>
           <td>White ratio</td>
           <td align="center">
-             <img style="float:center" src="plots/WHITE_RATIO-control.png" alt='line plot of health result from 2001 to 2015' ></img>
-          </td align="center">
-          <td>
-             <img style="float:center" src="plots/WHITE_RATIO-treatment.png" alt='line plot of health result from 2001 to 2015' ></img>
+             <img style="float:center" src="plots/WHITE_RATIO-control.png" alt='line plot of health result from 2001 to 2015' width="90%"></img>
+          </td>
+          <td align="center">
+             <img style="float:center" src="plots/WHITE_RATIO-treatment.png" alt='line plot of health result from 2001 to 2015' width="90%"></img>
         </td>
        </tr>
     </table>
-    </p>
 
     <h3>Difference in Difference Methodology</h3>
     <p>Given that change in body composition, as well as in a school's
@@ -209,7 +209,7 @@
       physical fitness level. Therefore, we applied fixed effect method to our DiD model. The result is listed
       in the third column of Table5. We found the coeffients we found in our DiD model within resampled data are robust.
       <table>
-        <caption>Table 5. Coefficients of DiD interaction terms</caption>
+        <caption><b>Table 5. Coefficients of DiD interaction terms</b></caption>
       <tr><td></td>        <td><b>2001-2015 DiD</b></td>     <td><b>2011-2015 DiD</b></td>        <td><b>Fixed Effect</b></td></tr>
       <tr><td>AC</td>         <td>-0.0465</td>       <td>-0.0191</td>        <td>-0.0191</td></tr>
       <tr><td></td>           <td>(0.008)</td>         <td>(0.012)</td>          <td>(0.012)</td></tr>
