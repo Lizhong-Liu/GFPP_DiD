@@ -40,42 +40,42 @@ Besides regressional analysis, we also want to examine the potential influence o
 We divide the project into two parts: regression analysis and ACS analysis. For the first part - regression analysis, all codes can be found in this repository (named as "data_something.py" or "plot_something.py"). We do the following to get the regression results:
 - Data cleaning: 
   - Data from CDE are recorded annually in .csv files or .xls files. Thus, we clean each variable up by year and concat them on CDS code (the identification code for each school). You can find three files recording the codes of data cleaning:
-    - School enrollment and demographics: data1_enrollment.py
-    - School-level physical fitness test results: data2_pft.py
-    - School-level poverty data (we use school-level enrollment rate of the [Free and Reduced Price Meals Program](https://www.fns.usda.gov/school-meals/applying-free-and-reduced-price-school-meals) as a proxy: data3_frpm.py
+    - School enrollment and demographics: [data1_enrollment.py](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/data1_enrollment.py)
+    - School-level physical fitness test results: [data2_pft.py](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/data2_pft.py)
+    - School-level poverty data (we use school-level enrollment rate of the [Free and Reduced Price Meals Program](https://www.fns.usda.gov/school-meals/applying-free-and-reduced-price-school-meals) as a proxy: [data3_frpm.py](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/data3_frpm.py)
   - With the codes above, we create three .csv files storing these variables. We also use these .csv files to create a sqlite database which is available to the public for future reference. All these data files are saved in the folder - "data":
-    - School enrollment and demographics: school_enrollment.csv
-    - School-level physical fitness test results: school_pft.csv
-    - School-level poverty: school_pft.csv
-    - Create a sqlite database: data4_create_db.sql
-    - Sqlite database: school_gfpp.sqlite (This file is saved in the root directory of this repo)
+    - School enrollment and demographics: [school_enrollment.csv](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/data/school_enrollment.csv)
+    - School-level physical fitness test results: [school_pft.csv](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/data/school_pft.csv)
+    - School-level poverty: [school_frpm.csv](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/data/school_frpm.csv)
+    - Create a sqlite database: [data4_create_db.sql](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/data4_create_db.sql)
+    - Sqlite database: [school_gfpp.sqlite](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/school_gfpp.sqlite) (This file is saved in the root directory of this repo)
 - Data merging:
   - We then use sqlite language to merge the tables in school_gfpp.sqlite. You can find the code recorded in:
-    - Sqlite merge tables: data4_merge.sql
+    - Sqlite merge tables: [data4_merge.sql](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/data4_merge.sql)
   - We also use pandas to merge data and generate a merged .csv file (also saved in "data" folder):
-    - Merged .csv table: school_merged.csv (just for future reference)
+    - Merged .csv table: [school_merged.csv](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/data/school_merged.csv) (just for future reference)
 - Regression analysis:
   - We first apply the DiD model on the entire dataset, but find that in 2011, the physical fitness test records fluctuate greatly. This can be due to the fact that CDE records this data differently since 2011.
   - Thus, we resample the data, using data from 2011 to 2015, and include only the schools that have records in all these years. We then apply the DiD model again on the resampled data. This analysis serves as a robustness test to the first regression.
   - We do a second robustness test with the resampled data. In this regression, we use a fixed effect model. The results are quite robust.
   - To visually identify the differences between treatment and control group and the changes over time, we also apply data visualization on both the entire dataset and the resampled data.
   - The codes are recorded in:
-    - data5_regression_plots.py
-    - plots_trends_of_outcomes.py
+    - [data5_regression_plots.py](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/data5_regression_plots.py)
+    - [plots_trends_of_outcomes.py](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/plots_trends_of_outcomes.py)
   - The plots are saved in the "plots" folder and the regression results are saved in "regression_results".
 
 The ACS analysis serves as a background analysis in our project. We use annual county-level data of California's food business from ACS, clean them up and store them in the "data" folder:
 - The codes for cleaning the datasets can be found in the "ACS_Food Business":
-  - ACS_data1_cleaning.py
+  - [ACS_data1_cleaning.py](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/ACS_Food%20Business/ACS_data1_cleaning.py)
 - The results are saved in "data" folder:
-  - ACS_LA.csv
-  - ACS_Agriculture.csv; ACS_FoodServices.csv; ACS_Retail.csv; ACS_Wholesale.csv
+  - [ACS_LA.csv](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/data/ACS_LA.csv)
+  - [ACS_Agriculture.csv](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/data/ACS_Agriculture.csv); [ACS_FoodServices.csv](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/data/ACS_FoodServices.csv); [ACS_Retail.csv](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/data/ACS_Retail.csv); [ACS_Wholesale.csv](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/data/ACS_Wholesale.csv)
 - We then use California's geometry data and ACS data to plot maps showing the trends of the growth of each business sector. The code can be found in "ACS_Food Business" folder:
-  - ACS_GIS_CA2011.py
-  - ACS_GIS_CA2016.py
+  - [ACS_GIS_CA2011.py](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/ACS_Food%20Business/ACS_GIS_CA2011.py)
+  - [ACS_GIS_CA2016.py](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/ACS_Food%20Business/ACS_GIS_CA2016.py)
   - The plots are saved in "plots" folders
 - We also take the initiative to plot an interactive map using folium. The codes can be found as:
-  - plots_folium.py
+  - [plots_folium.py](https://github.com/Lizhong-Liu/GFPP_DiD/blob/master/plots_folium.py)
 
 
 #### Deliverables and Presentation
