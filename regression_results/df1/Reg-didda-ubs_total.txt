@@ -4,7 +4,7 @@ Dep. Variable:              UBS_TOTAL   R-squared:                       0.173
 Model:                            OLS   Adj. R-squared:                  0.171
 Method:                 Least Squares   F-statistic:                     155.6
 Date:                Fri, 01 Dec 2017   Prob (F-statistic):          1.94e-209
-Time:                        18:32:02   Log-Likelihood:                 2274.1
+Time:                        20:48:12   Log-Likelihood:                 2274.1
 No. Observations:                5230   AIC:                            -4532.
 Df Residuals:                    5222   BIC:                            -4480.
 Df Model:                           7                                         
